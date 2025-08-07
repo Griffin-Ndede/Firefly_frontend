@@ -1,11 +1,26 @@
 import './index.css'
+import { createBrowserRouter, RouterProvider } from 'react-router'
+import Home from './Pages/Home'
+import Contact from './Pages/Contact'
+
+
 
 function App() {
+  const Router = createBrowserRouter([
+    {
+      path: "/",
+      element: <Home />
+    },
+    {
+      path: "/contact",
+      element: <Contact/>
+    }
+  ])
 
   return (
-    <div className='text-4xl font-bold text-custom-blue bg-black p-20'>
-     This is my react app where everything is going to run from
-    </div>
+    <>
+      <RouterProvider router={Router} />
+    </>
   )
 }
 
