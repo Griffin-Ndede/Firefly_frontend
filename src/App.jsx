@@ -2,6 +2,7 @@ import './index.css'
 import { createBrowserRouter, RouterProvider } from 'react-router'
 import Home from './Pages/Home'
 import Contact from './Pages/Contact'
+import Navbar from './Components/Navbar'
 
 
 
@@ -13,8 +14,13 @@ function App() {
     },
     {
       path: "/contact",
-      element: <Contact/>
+      element: <Contact />
+    },
+     {
+      path: "/navbar",
+      element: <Navbar/>
     }
+
   ])
 
   return (
