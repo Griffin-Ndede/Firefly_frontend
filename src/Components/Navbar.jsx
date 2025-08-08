@@ -7,7 +7,7 @@ function Navbar() {
 
   return (
     <header className="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-md shadow-md">
-      <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-3">
+      <div className="mx-auto flex items-center justify-between px-6 py-3">
         {/* Logo */}
         <img
           src="/images/Firefly_logo.png"
@@ -31,7 +31,7 @@ function Navbar() {
         <nav
           className={`${
             isOpen ? 'flex items-end w-fit float-end' : 'hidden'
-          } absolute top-full right-0 w-fit bg-white md:static md:flex md:w-auto md:bg-transparent md:items-center gap-3 md:gap-8 mt-2 md:mt-0 px-6 py-4 md:p-0 flex-col md:flex-row  md:rounded-none md:shadow-none`}
+          } absolute top-full right-0 w-full bg-white md:static md:flex md:w-auto md:bg-transparent md:items-center gap-3 md:gap-8 mt-2 md:mt-0 px-6 py-4 md:p-0 flex-col md:flex-row  md:rounded-none md:shadow-none`}
         >
           <Link
             to="/"

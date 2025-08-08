@@ -1,13 +1,75 @@
 import React from 'react'
 import Navbar from '../Components/Navbar'
+import { CircleCheckBig, Grip, ScrollText, Users, SquareStack, Palette, Brush, Blend, Ratio, Library, LibraryBig} from 'lucide-react'
 
 function Home() {
-  return (
-    <div>
-        <Navbar/>
-      This is my home page
-    </div>
-  )
+    return (
+        <>
+            <Navbar />
+            <section className='h-fit py-10'>
+                <p className='md:mt-32 mt-16 mx-auto items-center font-bold text-3xl px-6 md:px-0 md:text-5xl max-w-5xl text-center leading-snug tracking-wide'>
+                    Join us in preserving Africa&apos;s heritage, empowering the next
+                    generation, and transforming the global narrative —
+                    <span className='italic text-custom-yellow'>
+                        one story at a time.
+                    </span>
+                </p>
+                <div className='flex justify-center gap-10 mt-24'>
+                    <button className='py-2 px-5 rounded-3xl shadow-lg transition-all duration-200 text-custom-gray hover:bg-custom-yellow hover:text-white'>Learn more</button>
+                    <button className='py-2 px-5 rounded-3xl shadow-lg transition-all duration-200 text-custom-gray hover:bg-custom-yellow hover:text-white'>Get in touch</button>
+                </div>
+            </section>
+            <section className='h-screen bg-custom-beige'>
+                <h1 className='text-5xl font-bold text-center py-8'>Our <span className='text-custom-yellow'>solution</span></h1>
+                <div className='grid grid-cols-1 md:grid-cols-4 gap-10 px-10 mx-auto'>
+                    <div className="shadow-2xl p-6 md:p-8 w-auto bg-custom-yellow rounded-3xl space-y-6">
+                        {/* Icons Row */}
+                        <div className="flex items-center justify-between relative">
+                            <Grip strokeWidth={0.5} className="text-white w-16 h-16 md:w-16 md:h-16" />
+                            <CircleCheckBig strokeWidth={0.5} className="text-white w-32 h-32 md:w-32 md:h-32 absolute top-0 right-2" />
+                        </div>
+
+                        {/* Text Content */}
+                        <div>
+                            <h1 className="text-2xl md:text-3xl font-bold text-gray-900 mb-2">
+                                What <br /> we offer
+                            </h1>
+                            <p className="text-lg font-light leading-relaxed text-gray-800">
+                                Firefly empowers cultural preservation, nurtures creative talent, and reshapes African narratives through education, mentorship, and authentic storytelling.
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div className='shadow-2xl p-6 md:p-8 w-auto bg-custom-yellow rounded-3xl space-y-6'>
+                        <div className="flex items-center justify-between relative">
+                            <Ratio strokeWidth={0.5} className="text-white w-16 h-16 md:w-16 md:h-16" />
+                            <LibraryBig strokeWidth={0.5} className="text-white w-32 h-32 md:w-32 md:h-32 absolute top-0 right-2" />
+                        </div>
+                        <h1 className='text-2xl md:text-3xl font-bold text-gray-900 mb-2'>Cultural <br />education</h1>
+                        <p className='text-lg font-light leading-relaxed text-gray-800'>Engaging, culturally immersive programs that teach children vernacular languages and African heritage through creative visual arts.</p>
+                    </div>
+                    <div className='shadow-2xl p-6 md:p-8 w-auto bg-custom-yellow rounded-3xl space-y-6'>
+                         <div className="flex items-center justify-between relative">
+                            <Blend strokeWidth={0.5} className="text-white w-16 h-16 md:w-16 md:h-16" />
+                            <Palette  strokeWidth={0.5} className="text-white w-32 h-32 md:w-32 md:h-32 absolute top-0 right-2" />
+                        </div>
+                        <h1 className='text-2xl md:text-3xl font-bold text-gray-900 mb-2'>Artistic <br /> empowerment</h1>
+                        <p className='text-lg font-light leading-relaxed text-gray-800'>Empowering apsiring visual artists from diverse backgrounds with mentorship, skills training, and pathways to sustainable careers</p>
+                    </div>
+                    <div className='shadow-2xl p-6 md:p-8 w-auto bg-custom-yellow rounded-3xl space-y-6'>
+                         <div className="flex items-center justify-between relative">
+                            <SquareStack strokeWidth={0.5} className="text-white w-16 h-16 md:w-16 md:h-16" />
+                            <ScrollText strokeWidth={0.5} className="text-white w-32 h-32 md:w-32 md:h-32 absolute top-0 right-2" />
+                        </div>
+                        <h1 className='text-2xl md:text-3xl font-bold text-gray-900 mb-2'>Authentic <br />Storytelling</h1>
+                        <p className='text-lg font-light leading-relaxed text-gray-800'>Producing orignal animated films and media content that genuinely reflex African experiences and challenge stereotypes</p>
+                    </div>
+                </div>
+            </section>
+        </>
+        
+    )
 }
 
 export default Home

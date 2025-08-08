@@ -9,7 +9,7 @@ export default {
       colors: {
         'custom-yellow': '#f9cd2e',
         'custom-gray': '#6d6e72',
-        "custom-white": ""
+        "custom-beige": "#f9f3e3"
       },
       screens: {
         'sm': '640px',
