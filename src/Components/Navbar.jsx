@@ -31,7 +31,7 @@ function Navbar() {
         <nav
           className={`${
             isOpen ? 'flex items-end w-fit float-end' : 'hidden'
-          } absolute top-full right-0 w-fit  bg-white/80 backdrop-blur-md md:static md:flex md:w-auto md:bg-transparent md:items-center gap-3 md:gap-8  md:mt-0 px-6 py-4 md:p-0 flex-col md:flex-row  md:rounded-none md:shadow-none`}
+          } absolute top-full right-0 w-fit  bg-white/80  md:static md:flex md:w-auto md:bg-transparent md:items-center gap-3 md:gap-8  md:mt-0 px-6 py-4 md:p-0 flex-col md:flex-row  md:rounded-none md:shadow-none`}
         >
           <Link
             to="/"
