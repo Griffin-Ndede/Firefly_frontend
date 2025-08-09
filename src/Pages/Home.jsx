@@ -77,7 +77,7 @@ function Home() {
                     </div>
                 </div>
             </section>
-            <section className='h-screen'>
+            <section className='h-fit mb-10'>
                 <h1 className='text-5xl font-bold text-center mb-10 text-custom-yellow my-4'>How we do it</h1>
                 <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 px-10 mx-auto max-w-7xl'>
                     <div className='bg-custom-beige rounded-3xl'>
