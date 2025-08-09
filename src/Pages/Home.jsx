@@ -1,5 +1,6 @@
 import React from 'react'
 import Navbar from '../Components/Navbar'
+import Footer from '../Components/Footer'
 import { CircleCheckBig, Grip, ScrollText, Users, SquareStack, Palette, Brush, Blend, Ratio, Library, LibraryBig } from 'lucide-react'
 
 function Home() {
@@ -107,6 +108,7 @@ function Home() {
                     </div>
                 </div>
             </section>
+            <Footer/>
         </>
 
     )
