@@ -109,6 +109,8 @@ function Home() {
                 </div>
             </section>
             <section className='h-fit py-4'>
+                <h1 className='text-center text-4xl font-bold text-custom-yellow my-3'>Meet our team</h1>
+                <p className='font-light text-custom-gray mt-4 text-xl text-center my-6'>The professional team behind firefly</p>
                 <div className='grid grid-cols-1 md:grid-cols-2 w-fit mx-auto gap-10'>
                     <div className='text-center mx-auto'>
                         <img src="https://media.istockphoto.com/id/1299077558/photo/lead-yourself-to-a-life-of-success.jpg?s=612x612&w=0&k=20&c=OQZPSnM1Eq-4Xx8bxJE8KQ5olJFfRw_YMc29aQ0Au6U=" alt="CEO"
