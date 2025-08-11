@@ -9,7 +9,7 @@ function Footer() {
             <img src="/images/Firefly_logo.png"
               alt="firefly_logo"
               className='h-24 mb-4' />
-            <p className='w-full'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, libero.</p>
+            <p className='w-full mb-5'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, libero.</p>
             <div className='flex gap-4'>
               <Instagram strokeWidth={1} />
               <Facebook strokeWidth={1} />
@@ -21,6 +21,7 @@ function Footer() {
               <li>Home</li>
               <li>About us</li>
               <li>Get in touch</li>
+              <li>Our team</li>
             </ul>
           </div>
           <div>
