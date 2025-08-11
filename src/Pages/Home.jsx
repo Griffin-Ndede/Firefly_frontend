@@ -109,7 +109,7 @@ function Home() {
                     </div>
                 </div>
             </section>
-            <section className='h-fit py-4'>
+            <section className='h-fit py-4 relative'>
                       <FloatingIconsBackground />
 
                 <h1 className='text-center text-5xl font-bold text-custom-yellow my-3'>Meet our team</h1>
