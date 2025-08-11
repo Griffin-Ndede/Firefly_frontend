@@ -30,8 +30,14 @@ export default {
         bold: 700,
         extrabold: 800,
       },
-      backgroundImage: {
-        'custom-bg': 'url("https://d1ymz67w5raq8g.cloudfront.net/Pictures/1024x536/P/web/e/f/n/classicchemexp_958361.jpg")'
+          keyframes: {
+        float: {
+          "0%, 100%": { transform: "translateY(0) rotate(0deg)" },
+          "50%": { transform: "translateY(-20px) rotate(6deg)" },
+        },
+      },
+      animation: {
+        float: "float 6s ease-in-out infinite",
       },
     },
   },

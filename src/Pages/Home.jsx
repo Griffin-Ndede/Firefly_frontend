@@ -1,6 +1,7 @@
 import React from 'react'
 import Navbar from '../Components/Navbar'
 import Footer from '../Components/Footer'
+import FloatingIconsBackground from '../Components/FloatingIconsBackground'
 import { CircleCheckBig, Grip, ScrollText, Users, SquareStack, Palette, Brush, Blend, Ratio, Library, LibraryBig } from 'lucide-react'
 
 function Home() {
@@ -109,18 +110,20 @@ function Home() {
                 </div>
             </section>
             <section className='h-fit py-4'>
-                <h1 className='text-center text-4xl font-bold text-custom-yellow my-3'>Meet our team</h1>
+                      <FloatingIconsBackground />
+
+                <h1 className='text-center text-5xl font-bold text-custom-yellow my-3'>Meet our team</h1>
                 <p className='font-light text-custom-gray mt-4 text-xl text-center my-6'>The professional team behind firefly</p>
                 <div className='grid grid-cols-1 md:grid-cols-2 w-fit mx-auto gap-10'>
                     <div className='text-center mx-auto'>
                         <img src="https://media.istockphoto.com/id/1299077558/photo/lead-yourself-to-a-life-of-success.jpg?s=612x612&w=0&k=20&c=OQZPSnM1Eq-4Xx8bxJE8KQ5olJFfRw_YMc29aQ0Au6U=" alt="CEO"
-                            className='h-56 object-cover mb-4  rounded-full mx-auto' />
+                            className='h-56 w-56 object-cover mb-4  rounded-full mx-auto' />
                         <h1 className='border-b-2 border-custom-yellow  w-fit mx-auto pb-2 text-2xl'>Sheryl Kambuni</h1>
                         <p className='font-light text-custom-gray mt-4 text-xl'>CEO & Visionary Leader</p>
                     </div>
                    <div className='text-center mx-auto'>
                         <img src="https://media.istockphoto.com/id/1299077558/photo/lead-yourself-to-a-life-of-success.jpg?s=612x612&w=0&k=20&c=OQZPSnM1Eq-4Xx8bxJE8KQ5olJFfRw_YMc29aQ0Au6U=" alt="CEO"
-                            className='h-56 object-cover mb-4 rounded-full p-2 mx-auto' />
+                            className='h-56 w-56 object-cover mb-4 rounded-full p-2 mx-auto' />
                         <h1 className='border-b-2 border-custom-yellow  w-fit mx-auto pb-2 text-2xl'>Jean Kambuni</h1>
                         <p className='font-light text-custom-gray mt-4 text-xl'>Co-founder & director</p>
                     </div>
