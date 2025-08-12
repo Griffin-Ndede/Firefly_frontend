@@ -4,7 +4,7 @@ import React from 'react'
 function Footer() {
   return (
     <>
-        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16 shadow-2xl items-center w-full mx-auto border-b border-gray-400 bg-custom-beige h-fit p-10 '>
+        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16 shadow-2xl items-center w-full mx-auto border-b border-gray-400 bg-custom-white h-fit p-10 '>
           <div>
             <img src="/images/Firefly_logo.png"
               alt="firefly_logo"
