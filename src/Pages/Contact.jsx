@@ -22,7 +22,7 @@ function Contact() {
                   type="text"
                   name="fname"
                   placeholder='First name'
-                  className='w-full py-2 px-3 rounded-3xl border border-gray-300' />
+                  className='w-full py-2 px-3 rounded-3xl border border-gray-300 placeholder:font-light text-sm' />
               </div>
               <div>
                 <label
@@ -32,7 +32,7 @@ function Contact() {
                   type="text"
                   name='lname'
                   placeholder='Last name'
-                  className='w-full py-2 px-3 rounded-3xl border border-gray-300' />
+                  className='w-full py-2 px-3 rounded-3xl border border-gray-300 placeholder:font-light text-sm' />
               </div>
             </div>
             <label
@@ -42,7 +42,14 @@ function Contact() {
               type="text"
               name='email'
               placeholder='Enter your email address'
-              className='w-full py-2 px-3 rounded-3xl border border-gray-300' />
+              className='w-full py-2 px-3 rounded-3xl border border-gray-300 mb-6 placeholder:font-light text-sm' />
+              <label 
+              htmlFor="message" 
+              className='block ml-4'>Message</label>
+              <textarea 
+              name="message" 
+              placeholder='Leave us a message'
+              className='h-32 w-full border border-gray-300 rounded-3xl pl-4 pt-2 placeholder:font-light text-sm'></textarea>
           </form>
         </div>
 
