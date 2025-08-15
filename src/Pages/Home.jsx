@@ -109,7 +109,8 @@ function Home() {
                     </div>
                 </div>
             </section>
-            <section className='h-fit py-4 relative'>
+            <section id='team'
+            className='h-screen py-4 relative'>
                       <FloatingIconsBackground />
 
                 <h1 className='text-center text-5xl font-bold text-custom-yellow my-3'>Meet our team</h1>

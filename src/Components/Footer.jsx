@@ -38,7 +38,7 @@ function Footer() {
             <li><a href="/" className="hover:text-black transition-colors">Home</a></li>
             <li><a href="/about" className="hover:text-black transition-colors">About us</a></li>
             <li><a href="/contact" className="hover:text-black transition-colors">Get in touch</a></li>
-            <li><a href="/team" className="hover:text-black transition-colors">Our team</a></li>
+            <li><a href="#team" className="hover:text-black transition-colors">Our team</a></li>
           </ul>
         </div>
 
