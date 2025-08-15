@@ -8,7 +8,7 @@ function Home() {
     return (
         <>
             <Navbar />
-            <section className='h-fit py-10'>
+            <section className='h-screen py-10'>
                 <p className='md:mt-32 mt-16 mx-auto items-center font-bold text-3xl px-6 md:px-0 md:text-5xl max-w-5xl text-center leading-snug tracking-wide'>
                     Join us in preserving Africa&apos;s heritage, empowering the next
                     generation, and transforming the global narrative —
