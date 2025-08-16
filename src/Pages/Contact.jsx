@@ -65,7 +65,10 @@ function Contact() {
             className='h-40 sm:h-56 md:h-72 w-full object-cover rounded-3xl shadow-2xl'
           />
 
-          <div className='bg-custom-yellow h-64 sm:h-96 w-full rounded-3xl mt-10 md:mt-20 shadow-lg'></div>
+          <div className='bg-custom-yellow h-64 sm:h-96 w-full rounded-3xl mt-10 md:mt-20 shadow-lg p-10'>
+            <p>Twitter</p>
+            <p>Instagram</p>
+          </div>
         </div>
 
       </section>
