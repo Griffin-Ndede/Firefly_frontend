@@ -1,13 +1,14 @@
 import React from 'react'
 import Navbar from '../Components/Navbar'
 import Footer from '../Components/Footer'
+import { Facebook, Instagram, Phone, Twitter } from 'lucide-react'
 
 function Contact() {
   return (
     <>
       <Navbar />
       <section className='min-h-screen grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-32 bg-custom-beige px-10 sm:px-6 lg:px-20 py-10'>
-        
+
         <div className='h-fit w-full rounded-3xl bg-white py-10 px-10 sm:px-16 mt-16 md:mt-24 shadow-2xl'>
           <h1 className='text-lg sm:text-xl font-light mb-4'>Get in touch</h1>
           <p className='font-bold text-2xl sm:text-3xl lg:text-4xl mb-4'>Let&apos;s chat, Reach out to us!</p>
@@ -59,20 +60,34 @@ function Contact() {
         </div>
 
         <div className='w-full flex flex-col items-center md:items-start mt-6 md:mt-24'>
-          <img 
-            src="https://st4.depositphotos.com/1158226/27864/i/450/depositphotos_278643274-stock-photo-stunning-mushrooms-on-moss-and.jpg" 
+          <img
+            src="https://st4.depositphotos.com/1158226/27864/i/450/depositphotos_278643274-stock-photo-stunning-mushrooms-on-moss-and.jpg"
             alt="firefly"
             className='h-40 sm:h-56 md:h-72 w-full object-cover rounded-3xl shadow-2xl'
           />
 
-          <div className='bg-custom-yellow h-64 sm:h-96 w-full rounded-3xl mt-10 md:mt-20 shadow-lg p-10'>
-            <p>Twitter</p>
-            <p>Instagram</p>
+          <div className='bg-white h-64 sm:h-96 w-full rounded-3xl mt-10 md:mt-20 shadow-2xl p-10 space-y-4 '>
+            <div className='flex gap-5 items-center'>
+              <Twitter strokeWidth={1} className='h-10 w-10 text-custom-yellow' />
+              <p className='text-2xl font-extralight'>Firefly</p>
+            </div>
+            <div className='flex gap-5 items-center'>
+              <Instagram strokeWidth={1} className='h-10 w-10 text-custom-yellow' />
+              <p className='text-2xl font-extralight'>Firefly</p>
+            </div>
+            <div className='flex gap-5 items-center'>
+              <Facebook strokeWidth={1} className='h-10 w-10 text-custom-yellow' />
+              <p className='text-2xl font-extralight'>Firefly</p>
+            </div>
+            <div className='flex gap-5 items-center'>
+              <Phone strokeWidth={1} className='h-10 w-10 text-custom-yellow' />
+              <p className='text-2xl font-extralight'>0712345678</p>
+            </div>
           </div>
         </div>
 
       </section>
-      <Footer/>
+      <Footer />
     </>
   )
 }
