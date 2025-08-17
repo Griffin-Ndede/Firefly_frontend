@@ -53,7 +53,7 @@ function Contact() {
               className='h-32 w-full border border-gray-300 rounded-3xl pl-4 pt-2 placeholder:font-light text-sm'
             ></textarea>
 
-            <button className='bg-custom-yellow my-4 mx-auto flex justify-center py-2 px-3 rounded-3xl w-full sm:w-1/3 font-medium'>
+            <button className='bg-custom-yellow my-4 mx-auto flex justify-center py-2 px-3 rounded-3xl w-full sm:w-1/3 text-xl font-light hover:bg-custom-gray hover:text-white'>
               Submit
             </button>
           </form>
