@@ -2,7 +2,7 @@ import React from 'react'
 import Navbar from '../Components/Navbar'
 import Footer from '../Components/Footer'
 import FloatingIconsBackground from '../Components/FloatingIconsBackground'
-import { CircleCheckBig, Grip, ScrollText, Users, SquareStack, Palette, Brush, Blend, Ratio, Library, LibraryBig } from 'lucide-react'
+import { CircleCheckBig, Grip, ScrollText, Users, SquareStack, Palette, Brush, Blend, Ratio, Library, LibraryBig, ArrowBigLeft, ArrowRight } from 'lucide-react'
 
 function Home() {
 
@@ -57,8 +57,13 @@ function Home() {
                     </span>
                 </p>
                 <div className='flex justify-center gap-10 mt-24'>
-                    <button className='py-2 px-5 rounded-3xl shadow-lg transition-all duration-200 text-custom-gray hover:bg-custom-yellow hover:text-white'>Learn more</button>
-                    <button className='py-2 px-5 rounded-3xl shadow-lg transition-all duration-200 text-custom-gray hover:bg-custom-yellow hover:text-white'>Get in touch</button>
+                    <button className='flex  gap-4 py-2 px-5 font-light rounded-3xl shadow-lg transition-all  transform hover:scale-110 duration-200 text-custom-gray hover:bg-custom-yellow hover:text-white'>
+                        Join our mission
+                        <ArrowRight strokeWidth={1} className='' />
+                    </button>
+                    <button className='py-2 px-5  font-light rounded-3xl shadow-lg transition-all hover:scale-110 duration-200 text-custom-gray hover:bg-custom-yellow hover:text-white'>
+                        Get in touch
+                    </button>
                 </div>
             </section>
             <section className='md:h-fit bg-custom-beige py-10'>
