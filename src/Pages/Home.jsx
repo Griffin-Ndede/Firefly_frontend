@@ -1,7 +1,6 @@
 import React from 'react'
 import Navbar from '../Components/Navbar'
 import Footer from '../Components/Footer'
-import FloatingIconsBackground from '../Components/FloatingIconsBackground'
 import { CircleCheckBig, Grip, ScrollText, Users, SquareStack, Palette, Brush, Blend, Ratio, Library, LibraryBig, ArrowBigLeft, ArrowRight } from 'lucide-react'
 
 function Home() {
@@ -48,24 +47,33 @@ function Home() {
     return (
         <>
             <Navbar />
-            <section className='h-screen py-10'>
-                <p className='md:mt-32 mt-16 mx-auto items-center font-bold text-3xl px-6 md:px-0 md:text-5xl max-w-5xl text-center leading-snug tracking-wide'>
-                    Join us in preserving Africa&apos;s heritage, empowering the next
-                    generation, and transforming the global narrative —
-                    <span className='italic text-custom-yellow'>
-                        one story at a time.
-                    </span>
-                </p>
-                <div className='flex justify-center gap-10 mt-24'>
-                    <button className='flex  gap-4 py-2 px-5 font-light rounded-3xl shadow-lg transition-all  transform hover:scale-110 duration-200 text-custom-gray hover:bg-custom-yellow hover:text-white'>
-                        Join our mission
-                        <ArrowRight strokeWidth={1} className='' />
-                    </button>
-                    <button className='py-2 px-5  font-light rounded-3xl shadow-lg transition-all hover:scale-110 duration-200 text-custom-gray hover:bg-custom-yellow hover:text-white'>
-                        Get in touch
-                    </button>
+            <section
+                className="relative h-screen flex flex-col justify-center items-center text-center px-6 md:px-12">
+
+                {/* Content */}
+                <div className="relative z-10 max-w-4xl mx-auto">
+                    <p className="font-extrabold text-3xl md:text-5xl leading-snug md:leading-tight tracking-wide drop-shadow-lg">
+                        Join us in preserving Africa&apos;s heritage, empowering the next
+                        generation, and transforming the global narrative —
+                        <span className="italic text-custom-yellow">
+                            one story at a time.
+                        </span>
+                    </p>
+
+                    {/* Buttons */}
+                    <div className="flex flex-wrap justify-center gap-6 mt-12">
+                        <button className="flex items-center gap-3 py-3 px-7 font-light rounded-full shadow-lg transition-transform transform hover:scale-110 duration-300 bg-custom-yellow text-white hover:bg-custom-yellow">
+                            Join our mission
+                            <ArrowRight strokeWidth={1.5} />
+                        </button>
+
+                        <button className="py-3 px-7 font-light rounded-full shadow-lg transition-transform transform hover:scale-110 duration-300 bg-white/90 text-custom-gray hover:bg-custom-yellow hover:text-white">
+                            Get in touch
+                        </button>
+                    </div>
                 </div>
             </section>
+
             <section className='md:h-fit bg-custom-beige py-10'>
                 <h1 className='text-5xl font-bold text-center mb-10'>Our <span className='text-custom-yellow'>solution</span></h1>
                 <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16 px-10 mx-auto'>
@@ -86,40 +94,50 @@ function Home() {
                     ))}
                 </div>
             </section>
+
+
             <section className='h-fit mb-10'>
                 <h1 className='text-5xl font-bold text-center mb-10 text-custom-yellow my-4'>How we do it</h1>
-                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 px-10 mx-auto max-w-7xl'>
-                    <div className='bg-custom-beige rounded-3xl'>
+                <div className='flex flex-wrap gap-10 px-10 mx-auto max-w-6xl'>
+                    <div className='bg-custom-beige rounded-3xl flex flex-col md:flex-row items-center'>
                         <img
                             src="/images/Firefly_Mzizi.jpg"
                             alt="Firefly_mizizi"
-                            className='h-64 w-full object-cover rounded-t-3xl' />
-                        <h1 className='text-2xl md:text-3xl font-bold  px-6 py-4'>Firefly MIZIZI</h1>
-                        <p className='text-lg font-light leading-relaxed text-custom-gray px-6 pb-6'>Cultural preservation and vernacular language education through visual arts</p>
+                            className='h-auto w-full md:w-2/3 object-cover rounded-t-3xl md:rounded-l-3xl md:rounded-tr-none hover:grayscale transition-all duration-1000 ease-in-out cursor-pointer'
+                        />
+                        <div className='w-full md:w-1/3'>
+                            <h1 className='text-2xl md:text-3xl font-bold px-6 py-4 text-center md:text-left'>Firefly MIZIZI</h1>
+                            <p className='text-lg font-light leading-relaxed text-custom-gray px-6 pb-6 text-center md:text-left'>
+                                Cultural preservation and vernacular language education through visual arts
+                            </p>
+                        </div>
                     </div>
 
-                    <div className='bg-custom-beige rounded-3xl'>
+                    <div className='bg-custom-beige rounded-3xl flex  flex-col md:flex-row items-center'>
+                        <div>
+                            <h1 className='text-2xl md:text-3xl font-bold px-6 py-4 text-center md:text-left'>Firefly TALANTA</h1>
+                            <p className='text-lg font-light leading-relaxed text-custom-gray px-6 pb-6 text-center md:text-left'>Fellowship and mentorship programs for youth in visual arts</p>
+                        </div>
                         <img
                             src="/images/Firefly_Talanta.jpg"
                             alt="Firefly_talanta"
-                            className='h-64 w-full object-cover rounded-t-3xl' />
-                        <h1 className='text-2xl md:text-3xl font-bold  px-6 py-4'>Firefly TALANTA</h1>
-                        <p className='text-lg font-light leading-relaxed text-custom-gray px-6 pb-6'>Fellowship and mentorship programs for youth in visual arts</p>
+                            className='h-auto w-full md:w-2/3 object-cover rounded-b-3xl md:rounded-r-3xl hover:grayscale transition-all duration-1000 ease-in-out cursor-pointer' />
                     </div>
 
-                    <div className='bg-custom-beige rounded-3xl'>
+                    <div className='bg-custom-beige rounded-3xl flex flex-col md:flex-row items-center'>
                         <img
                             src="/images/Firefly_Taswira.png"
                             alt="Firefly_taswira"
-                            className='h-64 w-full object-cover rounded-t-3xl' />
-                        <h1 className='text-2xl md:text-3xl font-bold  px-6 py-4'>Firefly TASWIRA</h1>
-                        <p className='text-lg font-light leading-relaxed text-custom-gray px-6 pb-6'>Production of animated content that showcases authentic African stories.</p>
+                            className='h-auto w-full md:w-2/3 object-cover rounded-t-3xl md:rounded-l-3xl md:rounded-tr-none hover:grayscale transition-all duration-1000 ease-in-out cursor-pointer'/>
+                        <div>
+                            <h1 className='text-2xl md:text-3xl font-bold px-6 py-4 text-center md:text-left'>Firefly TASWIRA</h1>
+                            <p className='text-lg font-light leading-relaxed text-custom-gray px-6 pb-6 text-center md:text-left'>Production of animated content that showcases authentic African stories.</p>
+                        </div>
                     </div>
                 </div>
             </section>
             <section id='team'
-                className='h-screen py-4 relative'>
-                <FloatingIconsBackground />
+                className='h-fit py-4 relative'>
 
                 <h1 className='text-center text-5xl font-bold text-custom-yellow my-3'>Meet our team</h1>
                 <p className='font-light text-custom-gray mt-4 text-xl text-center my-6'>The professional team behind firefly</p>
