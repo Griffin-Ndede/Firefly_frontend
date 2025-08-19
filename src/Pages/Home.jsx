@@ -1,4 +1,6 @@
 import React from 'react'
+import Tilt from 'react-parallax-tilt';
+import { motion } from "motion/react"
 import Navbar from '../Components/Navbar'
 import Footer from '../Components/Footer'
 import { CircleCheckBig, Grip, ScrollText, Users, SquareStack, Palette, Brush, Blend, Ratio, Library, LibraryBig, ArrowBigLeft, ArrowRight } from 'lucide-react'
@@ -47,11 +49,12 @@ function Home() {
     return (
         <>
             <Navbar />
-            <section
+            <section 
                 className="relative h-screen flex flex-col justify-center items-center text-center px-6 md:px-12">
 
                 {/* Content */}
-                <div className="relative z-10 max-w-4xl mx-auto">
+                <div
+ className="relative z-10 max-w-4xl mx-auto">
                     <p className="font-extrabold text-3xl md:text-5xl leading-snug md:leading-tight tracking-wide drop-shadow-lg">
                         Join us in preserving Africa&apos;s heritage, empowering the next
                         generation, and transforming the global narrative —
@@ -62,7 +65,8 @@ function Home() {
 
                     {/* Buttons */}
                     <div className="flex flex-wrap justify-center gap-6 mt-12">
-                        <button className="flex items-center gap-3 py-3 px-7 font-light rounded-full shadow-lg transition-transform transform hover:scale-110 duration-300 bg-custom-yellow text-white hover:bg-custom-yellow">
+                        <button
+                            className="flex items-center gap-3 py-3 px-7 font-light rounded-full shadow-lg transition-transform transform hover:scale-110 duration-300 bg-custom-yellow text-white hover:bg-custom-yellow">
                             Join our mission
                             <ArrowRight strokeWidth={1.5} />
                         </button>
@@ -73,6 +77,7 @@ function Home() {
                     </div>
                 </div>
             </section>
+
 
             <section className='md:h-fit bg-custom-beige py-10'>
                 <h1 className='text-5xl font-bold text-center mb-10'>Our <span className='text-custom-yellow'>solution</span></h1>
@@ -124,11 +129,12 @@ function Home() {
                             className='h-auto w-full md:w-2/3 object-cover rounded-b-3xl md:rounded-r-3xl hover:grayscale transition-all duration-1000 ease-in-out cursor-pointer' />
                     </div>
 
-                    <div className='bg-custom-beige rounded-3xl flex flex-col md:flex-row items-center'>
+                    <div
+                        className='bg-custom-beige rounded-3xl flex flex-col md:flex-row items-center'>
                         <img
                             src="/images/Firefly_Taswira.png"
                             alt="Firefly_taswira"
-                            className='h-auto w-full md:w-2/3 object-cover rounded-t-3xl md:rounded-l-3xl md:rounded-tr-none hover:grayscale transition-all duration-1000 ease-in-out cursor-pointer'/>
+                            className='h-auto w-full md:w-2/3 object-cover rounded-t-3xl md:rounded-l-3xl md:rounded-tr-none hover:grayscale transition-all duration-1000 ease-in-out cursor-pointer' />
                         <div>
                             <h1 className='text-2xl md:text-3xl font-bold px-6 py-4 text-center md:text-left'>Firefly TASWIRA</h1>
                             <p className='text-lg font-light leading-relaxed text-custom-gray px-6 pb-6 text-center md:text-left'>Production of animated content that showcases authentic African stories.</p>
@@ -143,14 +149,19 @@ function Home() {
                 <p className='font-light text-custom-gray mt-4 text-xl text-center my-6'>The professional team behind firefly</p>
                 <div className='grid grid-cols-1 md:grid-cols-2 w-fit mx-auto gap-10'>
                     <div className='text-center mx-auto'>
-                        <img src="https://media.istockphoto.com/id/1299077558/photo/lead-yourself-to-a-life-of-success.jpg?s=612x612&w=0&k=20&c=OQZPSnM1Eq-4Xx8bxJE8KQ5olJFfRw_YMc29aQ0Au6U=" alt="CEO"
-                            className='h-56 w-56 object-cover mb-4  rounded-full mx-auto' />
+                        <Tilt>
+                            <img src="https://media.istockphoto.com/id/1299077558/photo/lead-yourself-to-a-life-of-success.jpg?s=612x612&w=0&k=20&c=OQZPSnM1Eq-4Xx8bxJE8KQ5olJFfRw_YMc29aQ0Au6U=" alt="CEO"
+                                className='h-56 w-56 object-cover mb-4  rounded-full mx-auto' />
+                        </Tilt>
+
                         <h1 className='border-b-2 border-custom-yellow  w-fit mx-auto pb-2 text-2xl'>Sheryl Kambuni</h1>
                         <p className='font-light text-custom-gray mt-4 text-xl'>CEO & Visionary Leader</p>
                     </div>
                     <div className='text-center mx-auto'>
-                        <img src="https://media.istockphoto.com/id/1299077558/photo/lead-yourself-to-a-life-of-success.jpg?s=612x612&w=0&k=20&c=OQZPSnM1Eq-4Xx8bxJE8KQ5olJFfRw_YMc29aQ0Au6U=" alt="CEO"
-                            className='h-56 w-56 object-cover mb-4 rounded-full p-2 mx-auto' />
+                        <Tilt>
+                            <img src="https://media.istockphoto.com/id/1299077558/photo/lead-yourself-to-a-life-of-success.jpg?s=612x612&w=0&k=20&c=OQZPSnM1Eq-4Xx8bxJE8KQ5olJFfRw_YMc29aQ0Au6U=" alt="CEO"
+                                className='h-56 w-56 object-cover mb-4 rounded-full p-2 mx-auto' />
+                        </Tilt>
                         <h1 className='border-b-2 border-custom-yellow  w-fit mx-auto pb-2 text-2xl'>Jean Kambuni</h1>
                         <p className='font-light text-custom-gray mt-4 text-xl'>Co-founder & director</p>
                     </div>
