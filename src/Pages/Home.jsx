@@ -1,11 +1,12 @@
-import React from 'react'
 import Tilt from 'react-parallax-tilt';
 import { motion } from "motion/react"
+
 import Navbar from '../Components/Navbar'
 import Footer from '../Components/Footer'
 import { CircleCheckBig, Grip, ScrollText, Users, SquareStack, Palette, Brush, Blend, Ratio, Library, LibraryBig, ArrowBigLeft, ArrowRight } from 'lucide-react'
 
 function Home() {
+
 
     const cardData = [
         {
@@ -49,12 +50,42 @@ function Home() {
     return (
         <>
             <Navbar />
-            <section 
-                className="relative h-screen flex flex-col justify-center items-center text-center px-6 md:px-12">
+            <section className="relative h-screen flex flex-col justify-center items-center text-center px-6 md:px-12 mt-12">
+                {/* Background shapes */}
+                <div className="absolute top-10 left-10 
+  w-24 h-32 sm:w-32 sm:h-44 md:w-40 md:h-56 lg:w-48 lg:h-64 
+  bg-custom-gray rounded-2xl -rotate-12 shadow-2xl">
+                </div>
 
-                {/* Content */}
+                <div className="absolute top-32 left-20 sm:left-40 
+  w-28 h-40 sm:w-40 sm:h-56 md:w-52 md:h-72 lg:w-64 lg:h-80 
+  bg-yellow-200 rounded-3xl rotate-6 shadow-2xl">
+                </div>
+
+                <div className="absolute bottom-10 right-10 
+  w-32 h-24 sm:w-44 sm:h-36 md:w-56 md:h-44 lg:w-72 lg:h-56 
+  bg-custom-yellow rounded-xl rotate-12 shadow-xl">
+                </div>
+                {/* Photos / drawings */}
+                <img
+                    src="/images/Firefly_Mzizi.jpg"
+                    alt="collage 1"
+                    className="absolute top-40 left-20 w-48 h-48 object-cover rounded-3xl rotate-2 shadow-2xl hidden sm:block"
+                />
+                <img
+                    src="/images/Firefly_Talanta.jpg"
+                    alt="collage 2"
+                    className="absolute bottom-28 left-64 w-56 h-56 object-cover rounded-full -rotate-6 shadow-2xl hidden sm:block"
+                />
+                <img
+                    src="/images/Firefly_Taswira.png"
+                    alt="collage 3"
+                    className="absolute top-24 right-40 w-64 h-64 object-cover rounded-2xl rotate-12 shadow-2xl hidden sm:block"
+                />
+
+                {/* Foreground content */}
                 <div
- className="relative z-10 max-w-4xl mx-auto">
+                    className="relative z-10 max-w-4xl mx-auto px-6">
                     <p className="font-extrabold text-3xl md:text-5xl leading-snug md:leading-tight tracking-wide drop-shadow-lg">
                         Join us in preserving Africa&apos;s heritage, empowering the next
                         generation, and transforming the global narrative —
@@ -77,6 +108,7 @@ function Home() {
                     </div>
                 </div>
             </section>
+
 
 
             <section className='md:h-fit bg-custom-beige py-10'>
