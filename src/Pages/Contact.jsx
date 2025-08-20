@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import Navbar from '../Components/Navbar'
 import Footer from '../Components/Footer'
 import { Facebook, Instagram, Phone, Twitter } from 'lucide-react'
+import Swal from 'sweetalert2'
 
 function Contact() {
 
@@ -20,7 +21,20 @@ function Contact() {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    alert("Form submitted successfully")
+    Swal.fire({
+      position: "center",
+      icon: "success",
+      title: "Form submitted successfully",
+      showConfirmButton: true,
+      // timer: 1500
+    });
+    setFormData({
+      fname: "",
+      lname: "",
+      email: "",
+      message: "",
+    })
+    
   }
 
   console.log(formData)
@@ -44,6 +58,7 @@ function Contact() {
                   name="fname"
                   onChange={handleChange}
                   value={formData.fname}
+                  required
                   placeholder='First name'
                   className='w-full py-2 px-3 rounded-3xl border border-gray-300 placeholder:font-light text-sm'
                 />
@@ -55,6 +70,7 @@ function Contact() {
                   name='lname'
                   onChange={handleChange}
                   value={formData.lname}
+                  required
                   placeholder='Last name'
                   className='w-full py-2 px-3 rounded-3xl border border-gray-300 placeholder:font-light text-sm'
                 />
@@ -63,10 +79,11 @@ function Contact() {
 
             <label htmlFor="email" className='block ml-2 sm:ml-4 font-light'>Email address</label>
             <input
-              type="text"
+              type="email"
               name='email'
               value={formData.email}
               onChange={handleChange}
+              required
               placeholder='Enter your email address'
               className='w-full py-2 px-3 rounded-3xl border border-gray-300 mb-6 placeholder:font-light text-sm'
             />
@@ -76,6 +93,7 @@ function Contact() {
               name="message"
               value={formData.message}
               onChange={handleChange}
+              required
               placeholder='Leave us a message'
               className='h-32 w-full border border-gray-300 rounded-3xl pl-4 pt-2 placeholder:font-light text-sm'
             ></textarea>
