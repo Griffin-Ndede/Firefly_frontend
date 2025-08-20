@@ -31,7 +31,7 @@ function Navbar() {
         <nav
           className={`${
             isOpen ? 'flex items-end w-fit float-end' : 'hidden'
-          } absolute top-full right-0 w-fit  bg-white  md:static md:flex md:w-auto md:bg-transparent md:items-center gap-3 md:gap-8  md:mt-0 px-6 py-4 md:p-0 flex-col md:flex-row  md:rounded-none md:shadow-none rounded-b-3xl`}
+          } absolute top-full right-0 w-fit  bg-white  md:static md:flex md:w-auto md:bg-transparent md:items-center gap-3 md:gap-8  md:mt-0 px-6 py-4 md:p-0 flex-col md:flex-row  md:rounded-none md:shadow-none rounded-3xl`}
         >
           <Link
             to="/"
@@ -39,18 +39,17 @@ function Navbar() {
           >
             Home
           </Link>
-          <Link
-            to="/about"
+          <a href='#about'
             className="py-2 px-5 rounded-3xl shadow-lg transition-all duration-200 text-gray-800 hover:bg-custom-yellow hover:text-white "
           >
             About Us
-          </Link>
-          <Link
-            to="/about"
+          </a>
+          <a
+            href="#services"
             className="py-2 px-5 rounded-3xl shadow-lg transition-all duration-200 text-gray-800 hover:bg-custom-yellow hover:text-white "
           >
             Our services
-          </Link>
+          </a>
           <Link
             to="/contact"
             className="py-2 px-5 rounded-3xl shadow-lg transition-all duration-200 text-gray-800 hover:bg-custom-yellow hover:text-white "

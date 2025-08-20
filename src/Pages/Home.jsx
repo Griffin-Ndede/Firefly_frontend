@@ -121,7 +121,7 @@ function Home() {
 
 
 
-            <section className='md:h-fit bg-custom-beige py-10'>
+            <section id='services' className='md:h-fit bg-custom-beige py-10'>
                 <h1 className='text-5xl font-bold text-center mb-10'>Our <span className='text-custom-yellow'>solution</span></h1>
                 <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16 px-10 mx-auto'>
                     {cardData.map((card, index) => (
@@ -143,7 +143,7 @@ function Home() {
             </section>
 
 
-            <section className='h-fit mb-10'>
+            <section id='about' className='h-fit mb-10'>
                 <h1 className='text-5xl font-bold text-center mb-10 text-custom-yellow my-4'>How we do it</h1>
                 <div className='flex flex-wrap gap-10 px-10 mx-auto max-w-6xl'>
                     <div className='bg-custom-beige rounded-3xl flex flex-col md:flex-row items-center'>
