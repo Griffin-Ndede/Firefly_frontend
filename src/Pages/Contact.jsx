@@ -124,14 +124,9 @@ function Contact() {
           </form>
         </div>
 
-        <div className='w-full flex flex-col items-center md:items-start mt-6 md:mt-24'>
-          <img
-            src="https://st4.depositphotos.com/1158226/27864/i/450/depositphotos_278643274-stock-photo-stunning-mushrooms-on-moss-and.jpg"
-            alt="firefly"
-            className='h-40 sm:h-56 md:h-72 w-full object-cover rounded-3xl shadow-2xl'
-          />
 
-          <div className="space-y-8 mt-12">
+        <div className='w-full flex flex-col items-center md:items-start mt-20'>
+             <div className="space-y-8 mt-12">
             {contactInformation.map((contactInfo, index) => (
               <div
                 key={index}
@@ -145,46 +140,14 @@ function Contact() {
                 </div>
               </div>
             ))}
-
-            {/* <div className="flex items-center space-x-4">
-              <div className="flex-shrink-0">
-                <Workflow className="w-6 h-6 text-orange" />
-              </div>
-              <div>
-                <h3 className="text-lg font-semibold mb-1 text-black">Collaborations</h3>
-                <p className="text-orange">Work with Firefly on creative projects, photography, and visual storytelling.</p>
-              </div>
-            </div>
-            <div className="flex items-center space-x-4">
-              <div className="flex-shrink-0">
-                <Mail className="w-6 h-6 text-orange" />
-              </div>
-              <div>
-                <h3 className="text-lg font-semibold mb-1 text-black">Email</h3>
-                <p className="text-orange">firefly@gmail.com</p>
-              </div>
-            </div>
-
-            <div className="flex items-center space-x-4">
-              <div className="flex-shrink-0">
-                <Phone className="w-6 h-6 text-orange" />
-              </div>
-              <div>
-                <h3 className="text-lg font-semibold mb-1 text-black">Phone</h3>
-                <p className="text-orange">+254-712-345-678</p>
-              </div>
-            </div>
-
-            <div className="flex items-center space-x-4">
-              <div className="flex-shrink-0">
-                <MapPin className="w-6 h-6 text-orange" />
-              </div>
-              <div>
-                <h3 className="text-lg font-semibold mb-1 text-black">Location</h3>
-                <p className="text-orange">Westlands, Nairobi</p>
-              </div>
-            </div> */}
           </div>
+          <img
+            src="https://st4.depositphotos.com/1158226/27864/i/450/depositphotos_278643274-stock-photo-stunning-mushrooms-on-moss-and.jpg"
+            alt="firefly"
+            className='h-40 sm:h-56 md:h-72 w-full object-cover rounded-3xl shadow-2xl mt-6 md:mt-16'
+          />
+
+       
         </div>
 
       </section>

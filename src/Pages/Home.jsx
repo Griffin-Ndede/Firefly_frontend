@@ -195,8 +195,8 @@ function Home() {
                 <div className='grid grid-cols-1 md:grid-cols-2 w-fit mx-auto gap-10'>
                     <div className='text-center mx-auto'>
                         <Tilt>
-                            <img src="https://media.istockphoto.com/id/1299077558/photo/lead-yourself-to-a-life-of-success.jpg?s=612x612&w=0&k=20&c=OQZPSnM1Eq-4Xx8bxJE8KQ5olJFfRw_YMc29aQ0Au6U=" alt="CEO"
-                                className='h-56 w-56 object-cover mb-4  rounded-full mx-auto' />
+                            <img src="/images/Sheryl.jpeg" alt="CEO"
+                                className='h-72 w-56 object-cover mb-4 rounded-full mx-auto' />
                         </Tilt>
 
                         <h1 className='border-b-2 border-custom-yellow  w-fit mx-auto pb-2 text-2xl'>Sheryl Kambuni</h1>
@@ -204,8 +204,8 @@ function Home() {
                     </div>
                     <div className='text-center mx-auto'>
                         <Tilt>
-                            <img src="https://media.istockphoto.com/id/1299077558/photo/lead-yourself-to-a-life-of-success.jpg?s=612x612&w=0&k=20&c=OQZPSnM1Eq-4Xx8bxJE8KQ5olJFfRw_YMc29aQ0Au6U=" alt="CEO"
-                                className='h-56 w-56 object-cover mb-4 rounded-full p-2 mx-auto' />
+                            <img src="/images/Jean.jpeg" alt="CEO"
+                                className='h-72 w-56 object-cover mb-4 rounded-full p-2 mx-auto' />
                         </Tilt>
                         <h1 className='border-b-2 border-custom-yellow  w-fit mx-auto pb-2 text-2xl'>Jean Kambuni</h1>
                         <p className='font-light text-custom-gray mt-4 text-xl'>Co-founder & director</p>
