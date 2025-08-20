@@ -1,5 +1,5 @@
 import Tilt from 'react-parallax-tilt';
-import { motion } from "motion/react"
+// import { motion } from "motion/react"
 
 import Navbar from '../Components/Navbar'
 import Footer from '../Components/Footer'
@@ -50,48 +50,58 @@ function Home() {
     return (
         <>
             <Navbar />
-            <section className="relative h-screen flex flex-col justify-center items-center text-center px-6 md:px-12 mt-12">
+            <section className="relative h-screen flex flex-col justify-center items-center text-center px-6 md:px-12 pt-20">
                 {/* Background shapes */}
                 <div className="absolute top-10 left-10 
-  w-24 h-32 sm:w-32 sm:h-44 md:w-40 md:h-56 lg:w-48 lg:h-64 
-  bg-custom-gray rounded-2xl -rotate-12 shadow-2xl">
+                        w-24 h-32 sm:w-32 sm:h-44 md:w-40 md:h-56 lg:w-48 lg:h-64 
+                    bg-custom-gray rounded-2xl -rotate-12 shadow-2xl">
                 </div>
 
                 <div className="absolute top-32 left-20 sm:left-40 
-  w-28 h-40 sm:w-40 sm:h-56 md:w-52 md:h-72 lg:w-64 lg:h-80 
-  bg-yellow-200 rounded-3xl rotate-6 shadow-2xl">
+                    w-28 h-40 sm:w-40 sm:h-56 md:w-52 md:h-72 lg:w-64 lg:h-80 
+                    bg-custom-yellow rounded-3xl rotate-6 shadow-2xl">
+                </div>
+                <div className="absolute top-10 right-10 
+                        w-24 h-32 sm:w-32 sm:h-44 md:w-40 md:h-56 lg:w-48 lg:h-64 
+                    bg-custom-gray rounded-2xl -rotate-12 shadow-2xl hidden sm:block">
                 </div>
 
+                <div className="absolute top-32 right-20 sm:right-40 
+                    w-28 h-40 sm:w-40 sm:h-56 md:w-52 md:h-72 lg:w-64 lg:h-80 
+                    bg-custom-yellow rounded-3xl rotate-6 shadow-2xl hidden sm:block">
+                </div>
                 <div className="absolute bottom-10 right-10 
-  w-32 h-24 sm:w-44 sm:h-36 md:w-56 md:h-44 lg:w-72 lg:h-56 
-  bg-custom-yellow rounded-xl rotate-12 shadow-xl">
+                    w-32 h-24 sm:w-44 sm:h-36 md:w-56 md:h-44 lg:w-72 lg:h-56 
+                    bg-custom-yellow rounded-xl rotate-12 shadow-xl">
                 </div>
                 {/* Photos / drawings */}
                 <img
-                    src="/images/Firefly_Mzizi.jpg"
+                    src="/images/1.png"
                     alt="collage 1"
-                    className="absolute top-40 left-20 w-48 h-48 object-cover rounded-3xl rotate-2 shadow-2xl hidden sm:block"
+                    className="absolute top-40 left-20 w-72 h-80 object-cover rounded-3xl rotate-2  hidden sm:block"
                 />
                 <img
-                    src="/images/Firefly_Talanta.jpg"
+                    src="/images/2.png"
                     alt="collage 2"
-                    className="absolute bottom-28 left-64 w-56 h-56 object-cover rounded-full -rotate-6 shadow-2xl hidden sm:block"
+                    className="absolute bottom-0 left-32 w-96 h-80 object-cover  -rotate-6 hidden sm:block"
                 />
                 <img
-                    src="/images/Firefly_Taswira.png"
+                    src="/images/3.png"
                     alt="collage 3"
-                    className="absolute top-24 right-40 w-64 h-64 object-cover rounded-2xl rotate-12 shadow-2xl hidden sm:block"
+                    className="absolute top-24 right-20 w-72 h-80 object-cover rounded-2xl rotate-12 shadow-2xl hidden sm:block"
                 />
 
                 {/* Foreground content */}
                 <div
                     className="relative z-10 max-w-4xl mx-auto px-6">
-                    <p className="font-extrabold text-3xl md:text-5xl leading-snug md:leading-tight tracking-wide drop-shadow-lg">
-                        Join us in preserving Africa&apos;s heritage, empowering the next
-                        generation, and transforming the global narrative —
-                        <span className="italic text-custom-yellow">
+                    <h1 className="font-extrabold  font-delius text-3xl md:text-6xl leading-snug md:leading-tight tracking-wide drop-shadow-lg mb-10">
+                        Transforming Africa&apos;s Narrative Through the Power of Visual Arts <span className="italic text-custom-yellow">
                             one story at a time.
                         </span>
+                    </h1>
+                    <p className='font-extralight text-xl max-w-2xl mx-auto'>
+                        Firefly is a social enterprise dedicated to challenging stereotypes, celebrating Africa&apos;s cultural richness,
+                        and sharing authentic stories that inspire appreciation of its creative heritage.
                     </p>
 
                     {/* Buttons */}
@@ -115,7 +125,7 @@ function Home() {
                 <h1 className='text-5xl font-bold text-center mb-10'>Our <span className='text-custom-yellow'>solution</span></h1>
                 <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16 px-10 mx-auto'>
                     {cardData.map((card, index) => (
-                        <div key={index} className="shadow-2xl p-6 md:p-8 w-auto bg-custom-yellow rounded-3xl space-y-6 transition-transform transform hover:scale-[1.05] hover:cursor-pointer">
+                        <div key={index} className="shadow-lg p-6 md:p-8 w-auto bg-custom-yellow rounded-3xl space-y-6 transition-transform transform hover:scale-[1.05] hover:cursor-pointer">
                             <div
                                 className="flex items-center justify-between relative lg:mb-12 hover:transform">
                                 <card.icons.main strokeWidth={0.5} className="text-white w-16 h-16 md:w-16 md:h-16" />
