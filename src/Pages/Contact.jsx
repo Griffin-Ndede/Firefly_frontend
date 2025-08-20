@@ -65,7 +65,7 @@ function Contact() {
 
         <div className='h-fit w-full rounded-3xl bg-white py-10 px-10 sm:px-16 mt-16 md:mt-24 shadow-2xl'>
           <h1 className='text-lg sm:text-xl font-light mb-4'>Get in touch</h1>
-          <p className='font-bold text-2xl sm:text-3xl lg:text-4xl mb-4'>Let&apos;s chat, Reach out to us!</p>
+          <p className='font-bold text-2xl sm:text-3xl lg:text-4xl mb-4'>Let&apos;s chat, <br/> Reach out to us!</p>
           <p className='font-extralight text-sm sm:text-lg border-b border-gray-300 pb-6'>
             Let&apos;s connect! We&apos;d love to hear from you — whether it&apos;s for collaborations, partnerships, or just to share ideas.
           </p>

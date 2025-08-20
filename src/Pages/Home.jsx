@@ -1,6 +1,6 @@
 import Tilt from 'react-parallax-tilt';
 // import { motion } from "motion/react"
-
+import { Link } from 'react-router';
 import Navbar from '../Components/Navbar'
 import Footer from '../Components/Footer'
 import { CircleCheckBig, Grip, ScrollText, Users, SquareStack, Palette, Brush, Blend, Ratio, Library, LibraryBig, ArrowBigLeft, ArrowRight } from 'lucide-react'
@@ -106,15 +106,18 @@ function Home() {
 
                     {/* Buttons */}
                     <div className="flex flex-wrap justify-center gap-6 mt-12">
-                        <button
-                            className="flex items-center gap-3 py-3 px-7 font-light rounded-full shadow-lg transition-transform transform hover:scale-110 duration-300 bg-custom-yellow text-white hover:bg-custom-yellow">
-                            Join our mission
-                            <ArrowRight strokeWidth={1.5} />
-                        </button>
-
-                        <button className="py-3 px-7 font-light rounded-full shadow-lg transition-transform transform hover:scale-110 duration-300 bg-white/90 text-custom-gray hover:bg-custom-yellow hover:text-white">
-                            Get in touch
-                        </button>
+                        <a href="#about">
+                            <button
+                                className="flex items-center gap-3 py-3 px-7 font-light rounded-full shadow-lg transition-transform transform hover:scale-110 duration-300 bg-custom-yellow text-white hover:bg-custom-yellow">
+                                Learn more
+                                <ArrowRight strokeWidth={1.5} />
+                            </button>
+                        </a>
+                        <Link to="/contact">
+                            <button className="py-3 px-7 font-light rounded-full shadow-lg transition-transform transform hover:scale-110 duration-300 bg-white/90 text-custom-gray hover:bg-custom-yellow hover:text-white">
+                                Get in touch
+                            </button>
+                        </Link>
                     </div>
                 </div>
             </section>
