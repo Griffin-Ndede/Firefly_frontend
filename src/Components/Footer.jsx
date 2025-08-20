@@ -3,7 +3,7 @@ import React from 'react'
 
 function Footer() {
   return (
-    <footer className="bg-custom-beige mt-10 items-center">
+    <footer className="bg-custom-beige pt-10 items-center">
       {/* Main Footer Container */}
       <div className="mx-auto px-10  grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-16 items-center">
         
