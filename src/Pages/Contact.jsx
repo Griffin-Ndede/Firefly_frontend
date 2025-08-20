@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import Navbar from '../Components/Navbar'
 import Footer from '../Components/Footer'
-import { Facebook, Instagram, Phone, Twitter } from 'lucide-react'
+import { Facebook, Instagram, Phone, Twitter, Mail, MapPin, ShoppingCart, Workflow } from 'lucide-react'
 import Swal from 'sweetalert2'
 
 function Contact() {
@@ -34,10 +34,30 @@ function Contact() {
       email: "",
       message: "",
     })
-    
   }
+  const contactInformation = [
+    {
+      "icon": Workflow,
+      "title": "Collaborations",
+      "description": "Work with Firefly on creative projects, photography, and visual storytelling."
+    },
+    {
+      "icon": Mail,
+      "title": "Email",
+      "description": "firefly@gmail.com"
+    },
+    {
+      "icon": Phone,
+      "title": "Phone",
+      "description": "+254-712-345-678"
+    },
+    {
+      "icon": MapPin,
+      "title": "Location",
+      "description": "Westlands, Nairobi"
+    }
+  ]
 
-  console.log(formData)
   return (
     <>
       <Navbar />
@@ -111,23 +131,59 @@ function Contact() {
             className='h-40 sm:h-56 md:h-72 w-full object-cover rounded-3xl shadow-2xl'
           />
 
-          <div className='bg-white h-64 sm:h-96 w-full rounded-3xl mt-10 md:mt-20 shadow-2xl p-10 space-y-4 '>
-            <div className='flex gap-5 items-center'>
-              <Twitter strokeWidth={1} className='h-10 w-10 text-custom-yellow' />
-              <p className='text-2xl font-extralight'>Firefly</p>
+          <div className="space-y-8 mt-12">
+            {contactInformation.map((contactInfo, index) => (
+              <div
+                key={index}
+                className="flex items-center space-x-4">
+                <div className="flex-shrink-0">
+                  <contactInfo.icon className="w-6 h-6 text-orange" />
+                </div>
+                <div>
+                  <h3 className="text-xl font-semibold mb-1 text-black">{contactInfo.title}</h3>
+                  <p className="text-custom-gray font-light text-lg">{contactInfo.description}</p>
+                </div>
+              </div>
+            ))}
+
+            {/* <div className="flex items-center space-x-4">
+              <div className="flex-shrink-0">
+                <Workflow className="w-6 h-6 text-orange" />
+              </div>
+              <div>
+                <h3 className="text-lg font-semibold mb-1 text-black">Collaborations</h3>
+                <p className="text-orange">Work with Firefly on creative projects, photography, and visual storytelling.</p>
+              </div>
             </div>
-            <div className='flex gap-5 items-center'>
-              <Instagram strokeWidth={1} className='h-10 w-10 text-custom-yellow' />
-              <p className='text-2xl font-extralight'>Firefly</p>
+            <div className="flex items-center space-x-4">
+              <div className="flex-shrink-0">
+                <Mail className="w-6 h-6 text-orange" />
+              </div>
+              <div>
+                <h3 className="text-lg font-semibold mb-1 text-black">Email</h3>
+                <p className="text-orange">firefly@gmail.com</p>
+              </div>
             </div>
-            <div className='flex gap-5 items-center'>
-              <Facebook strokeWidth={1} className='h-10 w-10 text-custom-yellow' />
-              <p className='text-2xl font-extralight'>Firefly</p>
+
+            <div className="flex items-center space-x-4">
+              <div className="flex-shrink-0">
+                <Phone className="w-6 h-6 text-orange" />
+              </div>
+              <div>
+                <h3 className="text-lg font-semibold mb-1 text-black">Phone</h3>
+                <p className="text-orange">+254-712-345-678</p>
+              </div>
             </div>
-            <div className='flex gap-5 items-center'>
-              <Phone strokeWidth={1} className='h-10 w-10 text-custom-yellow' />
-              <p className='text-2xl font-extralight'>0712345678</p>
-            </div>
+
+            <div className="flex items-center space-x-4">
+              <div className="flex-shrink-0">
+                <MapPin className="w-6 h-6 text-orange" />
+              </div>
+              <div>
+                <h3 className="text-lg font-semibold mb-1 text-black">Location</h3>
+                <p className="text-orange">Westlands, Nairobi</p>
+              </div>
+            </div> */}
           </div>
         </div>
 
