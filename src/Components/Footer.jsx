@@ -1,5 +1,6 @@
 import { Facebook, Instagram, Twitter } from 'lucide-react'
 import React from 'react'
+import { Link } from 'react-router'
 
 function Footer() {
   return (
@@ -36,8 +37,8 @@ function Footer() {
           <h3 className="font-semibold mb-4">Quick Links</h3>
           <ul className="space-y-2 text-gray-600">
             <li><a href="/" className="hover:text-custom-gray transition-colors">Home</a></li>
-            <li><a href="/about" className="hover:text-custom-gray transition-colors">About us</a></li>
-            <li><a href="/contact" className="hover:text-custom-gray transition-colors">Get in touch</a></li>
+            <li><a href="#about" className="hover:text-custom-gray transition-colors">About us</a></li>
+            <Link to="/contact" className="hover:text-custom-gray transition-colors">Get in touch</Link>
             <li><a href="#team" className="hover:text-custom-gray transition-colors">Our team</a></li>
           </ul>
         </div>
