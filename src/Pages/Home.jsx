@@ -128,7 +128,7 @@ function Home() {
                 <h1 className='text-5xl font-bold text-center mb-10'>Our <span className='text-custom-yellow'>solution</span></h1>
                 <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16 px-10 mx-auto'>
                     {cardData.map((card, index) => (
-                        <div key={index} className="shadow-lg p-6 md:p-8 w-auto bg-custom-yellow rounded-3xl space-y-6 transition-transform transform hover:scale-[1.05] hover:cursor-pointer">
+                        <div key={index} className="shadow-lg p-6 md:p-8 w-auto bg-custom-yellow rounded-3xl space-y-6 transition-transform transform hover:scale-[1.05] hover:cursor-pointer hover:shadow-2xl">
                             <div
                                 className="flex items-center justify-between relative lg:mb-12 hover:transform">
                                 <card.icons.main strokeWidth={0.5} className="text-white w-16 h-16 md:w-16 md:h-16" />
