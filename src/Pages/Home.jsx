@@ -3,7 +3,7 @@ import Tilt from 'react-parallax-tilt';
 import { Link } from 'react-router';
 import Navbar from '../Components/Navbar'
 import Footer from '../Components/Footer'
-import { CircleCheckBig, Grip, ScrollText, Users, SquareStack, Palette, Brush, Blend, Ratio, Library, LibraryBig, ArrowBigLeft, ArrowRight } from 'lucide-react'
+import { CircleCheckBig, Grip, ScrollText, SquareStack, Palette, Blend, Ratio, LibraryBig, ArrowRight } from 'lucide-react'
 
 function Home() {
 
@@ -171,7 +171,7 @@ function Home() {
                         <img
                             src="/images/Firefly_Talanta.jpg"
                             alt="Firefly_talanta"
-                            className='h-auto w-full md:w-2/3 object-cover rounded-b-3xl md:rounded-r-3xl hover:grayscale transition-all duration-1000 ease-in-out cursor-pointer' />
+                            className='h-auto w-full md:w-2/3 object-cover rounded-r-3xl md:rounded-r-3xl hover:grayscale transition-all duration-1000 ease-in-out cursor-pointer' />
                     </div>
 
                     <div
