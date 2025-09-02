@@ -1,12 +1,14 @@
 import Tilt from 'react-parallax-tilt';
+import { useState } from 'react';
 // import { motion } from "motion/react"
 import { Link } from 'react-router';
 import Navbar from '../Components/Navbar'
 import Footer from '../Components/Footer'
-import { CircleCheckBig, Grip, ScrollText, SquareStack, Palette, Blend, Ratio, LibraryBig, ArrowRight } from 'lucide-react'
+import { CircleCheckBig, Grip, ScrollText, SquareStack, Palette, Blend, Ratio, LibraryBig, ArrowRight, Linkedin } from 'lucide-react'
 
 function Home() {
 
+    const [flipped, setIsFlipped] = useState(false)
 
     const cardData = [
         {
@@ -122,8 +124,6 @@ function Home() {
                 </div>
             </section>
 
-
-
             <section id='services' className='md:h-fit bg-custom-beige py-10'>
                 <h1 className='text-5xl font-bold text-center mb-10'>Our <span className='text-custom-yellow'>solution</span></h1>
                 <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16 px-10 mx-auto'>
@@ -144,7 +144,6 @@ function Home() {
                     ))}
                 </div>
             </section>
-
 
             <section id='about' className='h-fit mb-10'>
                 <h1 className='text-5xl font-bold text-center mb-10 text-custom-yellow my-4'>How we do it</h1>
@@ -187,9 +186,9 @@ function Home() {
                     </div>
                 </div>
             </section>
+
             <section id='team'
                 className='h-fit py-4 relative'>
-
                 <h1 className='text-center text-5xl font-bold text-custom-yellow my-3'>Meet our team</h1>
                 <p className='font-light text-custom-gray mt-4 text-xl text-center my-6'>The professional team behind firefly</p>
                 <div className='grid grid-cols-1 md:grid-cols-2 w-fit mx-auto gap-10'>
@@ -212,6 +211,42 @@ function Home() {
                     </div>
                 </div>
             </section>
+
+                <section className="flex flex-col items-center justify-center py-16 bg-gray-100">
+      <h1 className="text-4xl font-bold mb-2">Card Flip with Text</h1>
+      <h3 className="text-lg font-light mb-10">Hover over the image below:</h3>
+
+      <div className="group w-[300px] h-[300px] [perspective:1000px]">
+        <div className="relative w-full h-full text-center transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)] shadow-lg rounded-xl overflow-hidden">
+          {/* Front */}
+          <div className="absolute w-full h-full [backface-visibility:hidden]">
+            <img
+              src="/images/Jean.jpeg"
+              alt="Team member"
+              className="w-full h-full object-cover"
+            />
+          </div>
+
+          {/* Back */}
+          <div className="absolute w-full h-full bg-blue-700 text-white flex flex-col items-center justify-center gap-3 [transform:rotateY(180deg)] [backface-visibility:hidden]">
+            <h1 className="text-2xl font-bold">John Doe</h1>
+            <p className="text-sm">Architect &amp; Engineer</p>
+            <p className="text-sm">We love that guy</p>
+
+            {/* LinkedIn Button */}
+            <a
+              href="https://www.linkedin.com/in/your-linkedin-profile"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 bg-white text-blue-600 px-4 py-2 rounded-full shadow hover:bg-gray-200 transition"
+            >
+              <Linkedin size={18} />
+              LinkedIn
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
             <Footer />
         </>
 
