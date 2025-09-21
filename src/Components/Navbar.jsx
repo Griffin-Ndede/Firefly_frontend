@@ -35,25 +35,25 @@ function Navbar() {
         >
           <Link
             to="/"
-            className="py-2 px-5 rounded-3xl shadow-lg transition-all duration-200 text-gray-800 hover:bg-custom-yellow hover:text-white "
+            className="py-2 px-5 rounded-3xl  transition-all duration-200 text-gray-800 hover:bg-custom-yellow  "
           >
             Home
           </Link>
           <a
             href="#services"
-            className="py-2 px-5 rounded-3xl shadow-lg transition-all duration-200 text-gray-800 hover:bg-custom-yellow hover:text-white "
+            className="py-2 px-5 rounded-3xl  transition-all duration-200 text-gray-800 hover:bg-custom-yellow  "
           >
             Our services
           </a>
           <a href='#about'
-            className="py-2 px-5 rounded-3xl shadow-lg transition-all duration-200 text-gray-800 hover:bg-custom-yellow hover:text-white "
+            className="py-2 px-5 rounded-3xl  transition-all duration-200 text-gray-800 hover:bg-custom-yellow  "
           >
             About Us
           </a>
           
           <Link
             to="/contact"
-            className="py-2 px-5 rounded-3xl shadow-lg transition-all duration-200 text-gray-800 hover:bg-custom-yellow hover:text-white "
+            className="py-2 px-5 rounded-3xl  transition-all duration-200 text-gray-800 hover:bg-custom-yellow  "
           >
             Get in Touch
           </Link>
