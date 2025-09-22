@@ -4,9 +4,11 @@ import { Link } from 'react-router';
 import Navbar from '../Components/Navbar'
 import Footer from '../Components/Footer'
 import { CircleCheckBig, Grip, ScrollText, SquareStack, Palette, Blend, Ratio, LibraryBig, ArrowRight, Linkedin } from 'lucide-react'
-
+import { useContext } from 'react';
+import UserContext from '../Context/userContext';
 function Home() {
 
+const user = useContext(UserContext)
 
     const cardData = [
         {

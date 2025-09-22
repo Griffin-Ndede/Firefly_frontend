@@ -5,12 +5,13 @@ import Contact from './Pages/Contact'
 import Navbar from './Components/Navbar'
 
 
-
 function App() {
+
+
   const Router = createBrowserRouter([
     {
       path: "/",
-      element: <Home />
+      element:<Home />
     },
     {
       path: "/contact",
