@@ -61,11 +61,11 @@ function Contact() {
   return (
     <>
       <Navbar />
-      <section className='min-h-screen grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-32 bg-white border-b border-gray-300 px-10 sm:px-6 lg:px-20 py-10'>
-
+      <section id="contact"
+        className='min-h-screen grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-32 bg-white border-b border-gray-300 px-10 sm:px-6 lg:px-20 py-10'>
         <div className='h-fit w-full rounded-3xl bg-white py-10 px-10 sm:px-16 mt-16 md:mt-24 shadow-2xl'>
           <h1 className='text-lg sm:text-xl font-light mb-4'>Get in touch</h1>
-          <p className='font-bold text-2xl sm:text-3xl lg:text-4xl mb-4'>Let&apos;s chat, <br/> Reach out to us!</p>
+          <p className='font-bold text-2xl sm:text-3xl lg:text-4xl mb-4'>Let&apos;s chat, <br /> Reach out to us!</p>
           <p className='font-extralight text-sm sm:text-lg border-b border-gray-300 pb-6'>
             Let&apos;s connect! We&apos;d love to hear from you — whether it&apos;s for collaborations, partnerships, or just to share ideas.
           </p>
@@ -126,7 +126,7 @@ function Contact() {
 
 
         <div className='w-full flex flex-col items-center md:items-start mt-20'>
-             <div className="space-y-8 mt-12">
+          <div className="space-y-8 mt-12">
             {contactInformation.map((contactInfo, index) => (
               <div
                 key={index}

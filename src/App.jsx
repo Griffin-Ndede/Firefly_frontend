@@ -1,8 +1,6 @@
 import './index.css'
 import { createBrowserRouter, RouterProvider } from 'react-router'
 import Home from './Pages/Home'
-import Contact from './Pages/Contact'
-import Navbar from './Components/Navbar'
 
 
 function App() {
@@ -13,14 +11,6 @@ function App() {
       path: "/",
       element:<Home />
     },
-    {
-      path: "/contact",
-      element: <Contact />
-    },
-     {
-      path: "/navbar",
-      element: <Navbar/>
-    }
 
   ])
 

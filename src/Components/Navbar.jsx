@@ -51,12 +51,12 @@ function Navbar() {
             About Us
           </a>
           
-          <Link
-            to="/contact"
+          <a
+            href="#contact"
             className="py-2 px-5 rounded-3xl  transition-all duration-200 text-gray-800 hover:bg-custom-yellow  "
           >
             Get in Touch
-          </Link>
+          </a>
         </nav>
       </div>
     </header>
