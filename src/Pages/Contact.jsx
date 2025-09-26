@@ -61,7 +61,7 @@ function Contact() {
   return (
     <>
       <Navbar />
-      <section className='min-h-screen grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-32 bg-custom-beige border-b border-gray-300 px-10 sm:px-6 lg:px-20 py-10'>
+      <section className='min-h-screen grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-32 bg-white border-b border-gray-300 px-10 sm:px-6 lg:px-20 py-10'>
 
         <div className='h-fit w-full rounded-3xl bg-white py-10 px-10 sm:px-16 mt-16 md:mt-24 shadow-2xl'>
           <h1 className='text-lg sm:text-xl font-light mb-4'>Get in touch</h1>
@@ -146,12 +146,8 @@ function Contact() {
             alt="firefly"
             className='h-40 sm:h-56 md:h-72 w-full object-cover rounded-3xl shadow-2xl mt-6 md:mt-16'
           />
-
-       
         </div>
-
       </section>
-      <Footer />
     </>
   )
 }

@@ -4,7 +4,7 @@ import { Link } from 'react-router';
 import Navbar from '../Components/Navbar'
 import Footer from '../Components/Footer'
 import Contact from '../Pages/Contact'
-import { CircleCheckBig, Grip, ScrollText, SquareStack, Palette, Blend, Ratio, LibraryBig, ArrowRight, Linkedin, ChevronDown} from 'lucide-react'
+import { CircleCheckBig, Grip, ScrollText, SquareStack, Palette, Blend, Ratio, LibraryBig, ArrowRight, Linkedin, ChevronDown } from 'lucide-react'
 // import { useContext } from 'react';
 // import UserContext from '../Context/userContext';
 import videoBg from '../assets/Flowers.mp4'
@@ -75,35 +75,90 @@ function Home() {
                         />
                     </div>
 
-                    <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
+                    <div className="absolute inset-0 bg-black/60 flex items-center justify-center">
                         <div className="max-w-5xl mx-auto px-6 text-center">
                             <h1 className="text-5xl md:text-6xl font-bold text-white mb-10">
                                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, reprehenderit.                            </h1>
                             <p className="text-2xl font-light text-white mb-8 leading-10 max-w-4xl mx-auto">
                                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus est at, illum dolores odit ipsa laboriosam. At laboriosam dolorum, quia sed cumque eaque nostrum minus hic alias fugit ipsa iure.<br />
                             </p>
-                              <div className="flex flex-wrap justify-center gap-6 mt-12">
-                        <a href="#about">
-                            <button
-                                className="flex items-center gap-3 py-3 px-7 font-light rounded-full shadow-lg transition-transform transform hover:scale-110 duration-300 bg-custom-yellow text-white hover:bg-custom-yellow">
-                                Learn more
-                                <ArrowRight strokeWidth={1.5} />
-                            </button>
-                        </a>
-                        <Link to="/contact">
-                            <button className="py-3 px-7 font-light rounded-full shadow-lg transition-transform transform hover:scale-110 duration-300 bg-white/90 text-custom-gray hover:bg-custom-yellow hover:text-white">
-                                Get in touch
-                            </button>
-                        </Link>
-                    </div>
+                            <div className="flex flex-wrap justify-center gap-6 mt-12">
+                                <a href="#about">
+                                    <button
+                                        className="flex items-center gap-3 py-3 px-7 font-light rounded-full shadow-lg transition-transform transform hover:scale-110 duration-300 bg-custom-yellow text-white hover:bg-custom-yellow">
+                                        Learn more
+                                        <ArrowRight strokeWidth={1.5} />
+                                    </button>
+                                </a>
+                                <Link to="/contact">
+                                    <button className="py-3 px-7 font-light rounded-full shadow-lg transition-transform transform hover:scale-110 duration-300 bg-white/90 text-custom-gray hover:bg-custom-yellow hover:text-white">
+                                        Get in touch
+                                    </button>
+                                </Link>
+                            </div>
                         </div>
                     </div>
 
-                
+
                 </div>
             </section>
-            <section className='h-screen'>
-                <h1 className='text-3xl text-center'>Problem</h1>
+            <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
+                <div className="max-w-7xl mx-auto">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                        {/* Image Section */}
+                        <div className="relative">
+                            <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl bg-gray-100">
+                                <img
+                                    src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=800"
+                                    alt="Problem Illustration"
+                                    className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
+                                />
+                            </div>
+                            {/* Decorative elements */}
+                            <div className="absolute -top-4 -left-4 w-24 h-24 bg-custom-yellow rounded-full"></div>
+                            <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-custom-gray rounded-full"></div>
+                        </div>
+
+                        {/* Content Section */}
+                        <div className="space-y-6">
+                            <div className="space-y-4">
+                                <div className="inline-block">
+                                    <span className="inline-flex items-center px-4 py-2 rounded-full text-regular font-medium bg-custom-yellow text-custom-gray ">
+                                        Problem
+                                    </span>
+                                </div>
+
+                                <h2 className="text-4xl lg:text-5xl font-bold  leading-tight">
+                                    Lorem ipsum dolor sit amet.
+                                </h2>
+                            </div>
+
+                            <div className="prose prose-lg  max-w-none">
+                                <p className="text-base font-light leading-relaxed">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, itaque tempora? Obcaecati,
+                                    aut accusantium temporibus consequuntur ex ducimus nesciunt consequatur sunt necessitatibus! Asperiores, perferendis iure.
+                                    Veritatis nobis saepe aliquam praesentium vel distinctio animi, quaerat aperiam minus fuga et voluptas tenetur!
+                                </p>
+                            </div>
+
+                            {/* Optional statistics or supporting points */}
+                            <div className="grid grid-cols-2 gap-8 pt-8 border-t border-gray-100">
+                                <div>
+                                    <div className="text-3xl font-bold text-custom-yellow mb-2">73%</div>
+                                    <div className="text-base font-light">
+                                        Lorem, ipsum dolor.
+                                    </div>
+                                </div>
+                                <div>
+                                    <div className="text-3xl font-bold text-custom-yellow mb-2">2.5x</div>
+                                    <div className="text-base font-light">
+                                        Lorem ipsum dolor sit.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
 
             <section id='services' className='md:h-fit bg-custom-beige py-10'>
