@@ -5,13 +5,9 @@ import Navbar from '../Components/Navbar'
 import Footer from '../Components/Footer'
 import Contact from '../Pages/Contact'
 import { CircleCheckBig, Grip, ScrollText, SquareStack, Palette, Blend, Ratio, LibraryBig, ArrowRight, Linkedin, ChevronDown } from 'lucide-react'
-// import { useContext } from 'react';
-// import UserContext from '../Context/userContext';
 import videoBg from '../assets/Flowers.mp4'
 
 function Home() {
-
-    // const user = useContext(UserContext)
 
     const cardData = [
         {
