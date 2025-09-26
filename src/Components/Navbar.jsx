@@ -6,7 +6,7 @@ function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
 
   return (
-    <header className="fixed top-0 w-full z-50 bg-white/40 backdrop-blur-md shadow-md">
+    <header className="fixed top-0 w-full z-50 bg-white backdrop-blur-md shadow-md">
       <div className="mx-auto flex items-center justify-between px-6 py-3">
         {/* Logo */}
         <img

@@ -3,12 +3,15 @@ import Tilt from 'react-parallax-tilt';
 import { Link } from 'react-router';
 import Navbar from '../Components/Navbar'
 import Footer from '../Components/Footer'
-import { CircleCheckBig, Grip, ScrollText, SquareStack, Palette, Blend, Ratio, LibraryBig, ArrowRight, Linkedin } from 'lucide-react'
-import { useContext } from 'react';
-import UserContext from '../Context/userContext';
+import Contact from '../Pages/Contact'
+import { CircleCheckBig, Grip, ScrollText, SquareStack, Palette, Blend, Ratio, LibraryBig, ArrowRight, Linkedin, ChevronDown} from 'lucide-react'
+// import { useContext } from 'react';
+// import UserContext from '../Context/userContext';
+import videoBg from '../assets/Flowers.mp4'
+
 function Home() {
 
-const user = useContext(UserContext)
+    // const user = useContext(UserContext)
 
     const cardData = [
         {
@@ -52,62 +55,34 @@ const user = useContext(UserContext)
     return (
         <>
             <Navbar />
-            <section className="relative h-screen flex flex-col justify-center items-center text-center px-6 md:px-12 pt-20">
-                {/* Background shapes */}
-                <div className="absolute top-10 left-10 
-                        w-24 h-32 sm:w-32 sm:h-44 md:w-40 md:h-56 lg:w-48 lg:h-64 
-                    bg-custom-gray rounded-2xl -rotate-12 shadow-2xl">
-                </div>
+            <section className='h-screen'>
+                <div className="relative h-screen">
+                    <div className="absolute inset-0 overflow-hidden">
+                        {/* Image for small screens */}
+                        <img
+                            src="/images/3.png"
+                            alt="background"
+                            className="w-auto h-full object-cover block sm:hidden"
+                        />
 
-                <div className="absolute top-32 left-20 sm:left-40 
-                    w-28 h-40 sm:w-40 sm:h-56 md:w-52 md:h-72 lg:w-64 lg:h-80 
-                    bg-custom-yellow rounded-3xl rotate-6 shadow-2xl">
-                </div>
-                <div className="absolute top-10 right-10 
-                        w-24 h-32 sm:w-32 sm:h-44 md:w-40 md:h-56 lg:w-48 lg:h-64 
-                    bg-custom-gray rounded-2xl -rotate-12 shadow-2xl hidden sm:block">
-                </div>
+                        {/* Video for larger screens */}
+                        <video
+                            src={videoBg}
+                            autoPlay
+                            loop
+                            muted
+                            className="w-full h-full object-cover hidden sm:block"
+                        />
+                    </div>
 
-                <div className="absolute top-32 right-20 sm:right-40 
-                    w-28 h-40 sm:w-40 sm:h-56 md:w-52 md:h-72 lg:w-64 lg:h-80 
-                    bg-custom-yellow rounded-3xl rotate-6 shadow-2xl hidden sm:block">
-                </div>
-                <div className="absolute bottom-10 right-10 
-                    w-32 h-24 sm:w-44 sm:h-36 md:w-56 md:h-44 lg:w-72 lg:h-56 
-                    bg-custom-yellow rounded-xl rotate-12 shadow-xl">
-                </div>
-                {/* Photos / drawings */}
-                <img
-                    src="/images/1.png"
-                    alt="collage 1"
-                    className="absolute top-40 left-20 w-72 h-80 object-cover rounded-3xl rotate-2  hidden sm:block"
-                />
-                <img
-                    src="/images/2.png"
-                    alt="collage 2"
-                    className="absolute bottom-0 left-32 w-96 h-80 object-cover  -rotate-6 hidden sm:block"
-                />
-                <img
-                    src="/images/3.png"
-                    alt="collage 3"
-                    className="absolute top-24 right-20 w-72 h-80 object-cover rounded-2xl rotate-12 shadow-2xl hidden sm:block"
-                />
-
-                {/* Foreground content */}
-                <div
-                    className="relative z-10 max-w-4xl mx-auto px-6">
-                    <h1 className="font-extrabold  font-delius text-3xl md:text-6xl leading-snug md:leading-tight tracking-wide drop-shadow-lg mb-10">
-                        Transforming Africa&apos;s Narrative Through the Power of Visual Arts <span className="italic text-custom-yellow">
-                            one story at a time.
-                        </span>
-                    </h1>
-                    <p className='font-extralight text-xl max-w-2xl mx-auto'>
-                        Firefly is a social enterprise dedicated to challenging stereotypes, celebrating Africa&apos;s cultural richness,
-                        and sharing authentic stories that inspire appreciation of its creative heritage.
-                    </p>
-
-                    {/* Buttons */}
-                    <div className="flex flex-wrap justify-center gap-6 mt-12">
+                    <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
+                        <div className="max-w-5xl mx-auto px-6 text-center">
+                            <h1 className="text-5xl md:text-6xl font-bold text-white mb-10">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, reprehenderit.                            </h1>
+                            <p className="text-2xl font-light text-white mb-8 leading-10 max-w-4xl mx-auto">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus est at, illum dolores odit ipsa laboriosam. At laboriosam dolorum, quia sed cumque eaque nostrum minus hic alias fugit ipsa iure.<br />
+                            </p>
+                              <div className="flex flex-wrap justify-center gap-6 mt-12">
                         <a href="#about">
                             <button
                                 className="flex items-center gap-3 py-3 px-7 font-light rounded-full shadow-lg transition-transform transform hover:scale-110 duration-300 bg-custom-yellow text-white hover:bg-custom-yellow">
@@ -121,7 +96,14 @@ const user = useContext(UserContext)
                             </button>
                         </Link>
                     </div>
+                        </div>
+                    </div>
+
+                
                 </div>
+            </section>
+            <section className='h-screen'>
+                <h1 className='text-3xl text-center'>Problem</h1>
             </section>
 
             <section id='services' className='md:h-fit bg-custom-beige py-10'>
@@ -211,8 +193,8 @@ const user = useContext(UserContext)
                     </div>
                 </div>
             </section>
+            <Contact />
 
-          
             <Footer />
         </>
 
@@ -220,3 +202,79 @@ const user = useContext(UserContext)
 }
 
 export default Home
+
+
+
+
+
+//  <section className="relative h-screen flex flex-col justify-center items-center text-center px-6 md:px-12 pt-20">
+//                 {/* Background shapes */}
+//                 <div className="absolute top-10 left-10 
+//                         w-24 h-32 sm:w-32 sm:h-44 md:w-40 md:h-56 lg:w-48 lg:h-64 
+//                     bg-custom-gray rounded-2xl -rotate-12 shadow-2xl">
+//                 </div>
+
+//                 <div className="absolute top-32 left-20 sm:left-40 
+//                     w-28 h-40 sm:w-40 sm:h-56 md:w-52 md:h-72 lg:w-64 lg:h-80 
+//                     bg-custom-yellow rounded-3xl rotate-6 shadow-2xl">
+//                 </div>
+//                 <div className="absolute top-10 right-10 
+//                         w-24 h-32 sm:w-32 sm:h-44 md:w-40 md:h-56 lg:w-48 lg:h-64 
+//                     bg-custom-gray rounded-2xl -rotate-12 shadow-2xl hidden sm:block">
+//                 </div>
+
+//                 <div className="absolute top-32 right-20 sm:right-40 
+//                     w-28 h-40 sm:w-40 sm:h-56 md:w-52 md:h-72 lg:w-64 lg:h-80 
+//                     bg-custom-yellow rounded-3xl rotate-6 shadow-2xl hidden sm:block">
+//                 </div>
+//                 <div className="absolute bottom-10 right-10 
+//                     w-32 h-24 sm:w-44 sm:h-36 md:w-56 md:h-44 lg:w-72 lg:h-56 
+//                     bg-custom-yellow rounded-xl rotate-12 shadow-xl">
+//                 </div>
+//                 {/* Photos / drawings */}
+//                 <img
+//                     src="/images/1.png"
+//                     alt="collage 1"
+//                     className="absolute top-40 left-20 w-72 h-80 object-cover rounded-3xl rotate-2  hidden sm:block"
+//                 />
+//                 <img
+//                     src="/images/2.png"
+//                     alt="collage 2"
+//                     className="absolute bottom-0 left-32 w-96 h-80 object-cover  -rotate-6 hidden sm:block"
+//                 />
+//                 <img
+//                     src="/images/3.png"
+//                     alt="collage 3"
+//                     className="absolute top-24 right-20 w-72 h-80 object-cover rounded-2xl rotate-12 shadow-2xl hidden sm:block"
+//                 />
+
+//                 {/* Foreground content */}
+//                 <div
+//                     className="relative z-10 max-w-4xl mx-auto px-6">
+//                     <h1 className="font-extrabold  font-delius text-3xl md:text-6xl leading-snug md:leading-tight tracking-wide drop-shadow-lg mb-10">
+//                         Transforming Africa&apos;s Narrative Through the Power of Visual Arts <span className="italic text-custom-yellow">
+//                             one story at a time.
+//                         </span>
+//                     </h1>
+//                     <p className='font-extralight text-xl max-w-2xl mx-auto'>
+//                         Firefly is a social enterprise dedicated to challenging stereotypes, celebrating Africa&apos;s cultural richness,
+//                         and sharing authentic stories that inspire appreciation of its creative heritage.
+//                     </p>
+
+//                     {/* Buttons */}
+//                     <div className="flex flex-wrap justify-center gap-6 mt-12">
+//                         <a href="#about">
+//                             <button
+//                                 className="flex items-center gap-3 py-3 px-7 font-light rounded-full shadow-lg transition-transform transform hover:scale-110 duration-300 bg-custom-yellow text-white hover:bg-custom-yellow">
+//                                 Learn more
+//                                 <ArrowRight strokeWidth={1.5} />
+//                             </button>
+//                         </a>
+//                         <Link to="/contact">
+//                             <button className="py-3 px-7 font-light rounded-full shadow-lg transition-transform transform hover:scale-110 duration-300 bg-white/90 text-custom-gray hover:bg-custom-yellow hover:text-white">
+//                                 Get in touch
+//                             </button>
+//                         </Link>
+//                     </div>
+//                 </div>
+//             </section>
