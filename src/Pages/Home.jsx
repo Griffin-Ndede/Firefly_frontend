@@ -4,7 +4,7 @@ import { Link } from 'react-router';
 import Navbar from '../Components/Navbar'
 import Footer from '../Components/Footer'
 import Contact from '../Pages/Contact'
-import { CircleCheckBig, Grip, ScrollText, SquareStack, Palette, Blend, Ratio, LibraryBig, ArrowRight, Linkedin, ChevronDown } from 'lucide-react'
+import { CircleCheckBig, Grip, ScrollText, SquareStack, Palette, Blend, Ratio, LibraryBig, ArrowRight} from 'lucide-react'
 import videoBg from '../assets/Flowers.mp4'
 
 function Home() {
