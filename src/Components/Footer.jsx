@@ -1,5 +1,4 @@
-import { Facebook, Instagram, Twitter } from 'lucide-react'
-import React from 'react'
+import { FaFacebook, FaInstagram , FaTwitter} from 'react-icons/fa'
 import { Link } from 'react-router'
 
 function Footer() {
@@ -21,13 +20,13 @@ function Footer() {
           </p>
           <div className="flex gap-4">
             <a href="#" className="p-2 rounded-full ">
-              <Instagram strokeWidth={1} className="w-10 h-10 text-custom-yellow hover:text-custom-gray transition-colors" />
+              <FaInstagram  className="w-10 h-10 text-custom-yellow hover:text-custom-gray transition-colors" />
             </a>
             <a href="#" className="p-2 rounded-full ">
-              <Facebook strokeWidth={1} className="w-10 h-10 text-custom-yellow hover:text-custom-gray transition-colors" />
+              <FaFacebook  className="w-10 h-10 text-custom-yellow hover:text-custom-gray transition-colors" />
             </a>
             <a href="#" className="p-2 rounded-full ">
-              <Twitter strokeWidth={1} className="w-10 h-10 text-custom-yellow hover:text-custom-gray transition-colors" />
+              <FaTwitter  className="w-10 h-10 text-custom-yellow hover:text-custom-gray transition-colors" />
             </a>
           </div>
         </div>
