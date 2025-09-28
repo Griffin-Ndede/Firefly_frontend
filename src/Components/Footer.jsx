@@ -1,4 +1,4 @@
-import { FaFacebook, FaInstagram , FaTwitter} from 'react-icons/fa'
+import { FaFacebook, FaInstagram , FaTwitter, FaTiktok} from 'react-icons/fa'
 import { Link } from 'react-router'
 
 function Footer() {
@@ -20,13 +20,16 @@ function Footer() {
           </p>
           <div className="flex gap-4">
             <a href="#" className="p-2 rounded-full ">
-              <FaInstagram  className="w-10 h-10 text-custom-yellow hover:text-custom-gray transition-colors" />
+              <FaInstagram size={32} className=" text-custom-yellow hover:text-custom-gray transition-colors" />
             </a>
             <a href="#" className="p-2 rounded-full ">
-              <FaFacebook  className="w-10 h-10 text-custom-yellow hover:text-custom-gray transition-colors" />
+              <FaFacebook size={32} className=" text-custom-yellow hover:text-custom-gray transition-colors" />
             </a>
             <a href="#" className="p-2 rounded-full ">
-              <FaTwitter  className="w-10 h-10 text-custom-yellow hover:text-custom-gray transition-colors" />
+              <FaTwitter size={32} className=" text-custom-yellow hover:text-custom-gray transition-colors" />
+            </a>
+             <a href="#" className="p-2 rounded-full ">
+              <FaTiktok size={32} className=" text-custom-yellow hover:text-custom-gray transition-colors" />
             </a>
           </div>
         </div>

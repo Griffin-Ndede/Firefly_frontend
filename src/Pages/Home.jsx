@@ -86,11 +86,11 @@ function Home() {
                                         <ArrowRight strokeWidth={1.5} />
                                     </button>
                                 </a>
-                                <Link to="/contact">
+                                <a href="#contact">
                                     <button className="py-3 px-7 font-light rounded-full shadow-lg transition-transform transform hover:scale-110 duration-300 bg-white/90 text-custom-gray hover:bg-custom-yellow hover:text-white">
                                         Get in touch
                                     </button>
-                                </Link>
+                                </a>
                             </div>
                         </div>
                     </div>
