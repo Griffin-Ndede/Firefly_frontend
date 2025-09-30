@@ -14,7 +14,6 @@ function Navbar() {
           alt="Firefly Logo"
           className="h-12 w-auto"
         />
-
         {/* Hamburger Menu - Mobile Only */}
         <button
           className="md:hidden focus:outline-none"

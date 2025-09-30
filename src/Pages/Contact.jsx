@@ -123,8 +123,6 @@ function Contact() {
             </button>
           </form>
         </div>
-
-
         <div className='w-full flex flex-col items-center md:items-start mt-20'>
           <div className="space-y-8 mt-12">
             {contactInformation.map((contactInfo, index) => (

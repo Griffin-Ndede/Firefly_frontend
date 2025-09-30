@@ -20,7 +20,8 @@ export default {
       },
       fontFamily: {
         poppins: ['Poppins', 'sans-serif'],
-        delius: ['"Delius Swash Caps"', 'cursive']
+        delius: ['"Delius Swash Caps"', 'cursive'],
+        sourGummy:['Sour Gummy']
 
       },
       fontWeight: {
