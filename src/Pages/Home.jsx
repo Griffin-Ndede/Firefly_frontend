@@ -262,7 +262,11 @@ function Home() {
                 <h1 className='text-center text-5xl font-bold text-custom-yellow my-3'>Meet our team</h1>
                 <p className='font-light text-custom-gray mt-4 text-xl text-center my-6'>The professional team behind firefly</p>
                 <div className='grid grid-cols-1 md:grid-cols-2 w-fit mx-auto gap-10'>
-                    <div className='text-center mx-auto'>
+                    <motion.div
+                        initial={{ y: 75 }}
+                        whileInView={{y: 0 }}
+                        transition={{ duration: 1 }}
+                        viewport={{ once: true }} className='text-center mx-auto'>
                         <Tilt>
                             <img src="/images/Sheryl.jpeg" alt="CEO"
                                 className='h-72 w-56 object-cover mb-4 rounded-full mx-auto' />
@@ -270,15 +274,20 @@ function Home() {
 
                         <h1 className='border-b-2 border-custom-yellow  w-fit mx-auto pb-2 text-2xl'>Sheryl Kambuni</h1>
                         <p className='font-light text-custom-gray mt-4 text-xl'>CEO & Visionary Leader</p>
-                    </div>
-                    <div className='text-center mx-auto'>
+                    </motion.div>
+                    <motion.div
+                        initial={{ y: 75 }}
+                        whileInView={{ y: 0 }}
+                        transition={{ duration: 2 }}
+                        viewport={{ once: true }}
+                        className='text-center mx-auto'>
                         <Tilt>
                             <img src="/images/Jean.jpeg" alt="CEO"
                                 className='h-72 w-56 object-cover mb-4 rounded-full p-2 mx-auto' />
                         </Tilt>
                         <h1 className='border-b-2 border-custom-yellow  w-fit mx-auto pb-2 text-2xl'>Jean Kambuni</h1>
                         <p className='font-light text-custom-gray mt-4 text-xl'>Co-founder & director</p>
-                    </div>
+                    </motion.div>
                 </div>
             </section>
             <Contact />
