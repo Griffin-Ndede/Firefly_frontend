@@ -6,6 +6,16 @@ import { motion } from "motion/react"
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
 
+  // Shared animation props for nav items
+  const navMotion = {
+    initial: { y: 0 },
+    whileHover: { y: [0, -10, 0] },
+    transition: {
+      duration: 0.5,
+      ease: "easeInOut",
+    },
+  }
+
   return (
     <header className="fixed top-0 w-full z-50 bg-white backdrop-blur-md shadow-md">
       <div className="mx-auto flex items-center justify-between px-6 py-3">
@@ -15,6 +25,7 @@ function Navbar() {
           alt="Firefly Logo"
           className="h-12 w-auto"
         />
+
         {/* Hamburger Menu - Mobile Only */}
         <button
           className="md:hidden focus:outline-none"
@@ -29,70 +40,49 @@ function Navbar() {
 
         {/* Nav Links */}
         <nav
-          className={`${isOpen ? 'flex items-end w-fit float-end' : 'hidden'
-            } absolute top-full right-0 w-fit  bg-white  md:static md:flex md:w-auto md:bg-transparent md:items-center gap-3 md:gap-8  md:mt-0 px-6 py-4 md:p-0 flex-col md:flex-row  md:rounded-none md:shadow-none rounded-3xl`}
+          className={`${isOpen ? 'flex' : 'hidden'}
+            absolute top-full right-0 w-fit bg-white 
+            md:static md:flex md:w-auto md:bg-transparent md:items-center 
+            gap-3 md:gap-8 px-6 py-4 md:p-0 
+            flex-col md:flex-row rounded-3xl md:rounded-none shadow-md md:shadow-none`}
         >
-         <motion.div
-  initial={{ y: 0 }}
-  whileHover={{ y: [0, -10, 0] }}
-  transition={{
-    duration: 0.5,
-    ease: "easeInOut",
-  }}
->
-  <Link
-    to="/"
-    className="py-2 px-5 rounded-3xl text-gray-800 hover:bg-custom-yellow"
-  >
-    Home
-  </Link>
-</motion.div>
+          <ul className="flex flex-col md:flex-row gap-3 md:gap-8 items-center">
+            <motion.li {...navMotion}>
+              <Link
+                to="/"
+                className="py-2 px-5 rounded-3xl text-gray-800 hover:bg-custom-yellow"
+              >
+                Home
+              </Link>
+            </motion.li>
 
-          <motion.a
-            initial={{ y: 0 }}
-            whileHover={{
-              y: [0, -10, 0],
-            }}
-            transition={{
-              duration: 0.5,       
-              ease: "easeInOut",   
-            }}
+            <motion.li {...navMotion}>
+              <a
+                href="#services"
+                className="py-2 px-5 rounded-3xl text-gray-800 hover:bg-custom-yellow"
+              >
+                Our Services
+              </a>
+            </motion.li>
 
-            href="#services"
-            className="py-2 px-5 rounded-3xl text-gray-800 hover:bg-custom-yellow"
-          >
-            Our services
-          </motion.a>
+            <motion.li {...navMotion}>
+              <a
+                href="#about"
+                className="py-2 px-5 rounded-3xl text-gray-800 hover:bg-custom-yellow"
+              >
+                About Us
+              </a>
+            </motion.li>
 
-          <motion.a
-            initial={{ y: 0 }}
-            whileHover={{
-              y: [0, -10, 0],
-            }}
-            transition={{
-              duration: 0.5,       
-              ease: "easeInOut",   
-            }}
-            href='#about'
-            className="py-2 px-5 rounded-3xl   text-gray-800 hover:bg-custom-yellow  "
-          >
-            About Us
-          </motion.a>
-
-          <motion.a
-            initial={{ y: 0 }}
-            whileHover={{
-              y: [0, -10, 0],
-            }}
-            transition={{
-              duration: 0.5,       
-              ease: "easeInOut",   
-            }}
-            href="#contact"
-            className="py-2 px-5 rounded-3xl   text-gray-800 hover:bg-custom-yellow  "
-          >
-            Get in Touch
-          </motion.a>
+            <motion.li {...navMotion}>
+              <a
+                href="#contact"
+                className="py-2 px-5 rounded-3xl text-gray-800 hover:bg-custom-yellow"
+              >
+                Get in Touch
+              </a>
+            </motion.li>
+          </ul>
         </nav>
       </div>
     </header>
