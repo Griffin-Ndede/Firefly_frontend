@@ -32,38 +32,67 @@ function Navbar() {
           className={`${isOpen ? 'flex items-end w-fit float-end' : 'hidden'
             } absolute top-full right-0 w-fit  bg-white  md:static md:flex md:w-auto md:bg-transparent md:items-center gap-3 md:gap-8  md:mt-0 px-6 py-4 md:p-0 flex-col md:flex-row  md:rounded-none md:shadow-none rounded-3xl`}
         >
-          <Link
-            to="/"
-            className="py-2 px-5 rounded-3xl  transition-all duration-200 text-gray-800 hover:bg-custom-yellow  "
-          >
-            Home
-          </Link>
+         <motion.div
+  initial={{ y: 0 }}
+  whileHover={{ y: [0, -10, 0] }}
+  transition={{
+    duration: 0.5,
+    ease: "easeInOut",
+  }}
+>
+  <Link
+    to="/"
+    className="py-2 px-5 rounded-3xl text-gray-800 hover:bg-custom-yellow"
+  >
+    Home
+  </Link>
+</motion.div>
+
           <motion.a
-            initial={{ y: 20, opacity: 0, scaleY: 0.8 }}
-            animate={{ y: 0, opacity: 1, scaleY: 1 }}
-            whileHover={{ y: -5 }}
-            transition={{
-              duration: 0.6,
-              ease: [0.25, 0.1, 0.25, 1], // smooth ease like iOS
+            initial={{ y: 0 }}
+            whileHover={{
+              y: [0, -10, 0],
             }}
+            transition={{
+              duration: 0.5,       
+              ease: "easeInOut",   
+            }}
+
             href="#services"
-            className="py-2 px-5 rounded-3xl transition-all duration-1000 text-gray-800 hover:bg-custom-yellow"
+            className="py-2 px-5 rounded-3xl text-gray-800 hover:bg-custom-yellow"
           >
             Our services
           </motion.a>
 
-          <a href='#about'
-            className="py-2 px-5 rounded-3xl  transition-all duration-200 text-gray-800 hover:bg-custom-yellow  "
+          <motion.a
+            initial={{ y: 0 }}
+            whileHover={{
+              y: [0, -10, 0],
+            }}
+            transition={{
+              duration: 0.5,       
+              ease: "easeInOut",   
+            }}
+            href='#about'
+            className="py-2 px-5 rounded-3xl   text-gray-800 hover:bg-custom-yellow  "
           >
             About Us
-          </a>
+          </motion.a>
 
-          <a
+          <motion.a
+            initial={{ y: 0 }}
+            whileHover={{
+              y: [0, -10, 0],
+            }}
+            transition={{
+              duration: 0.5,       
+              ease: "easeInOut",   
+            }}
             href="#contact"
-            className="py-2 px-5 rounded-3xl  transition-all duration-200 text-gray-800 hover:bg-custom-yellow  "
+            className="py-2 px-5 rounded-3xl   text-gray-800 hover:bg-custom-yellow  "
           >
             Get in Touch
-          </a>
+          </motion.a>
         </nav>
       </div>
     </header>
