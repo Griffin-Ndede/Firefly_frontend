@@ -44,14 +44,15 @@ function Navbar() {
             gap-3 md:gap-8 px-6 py-4 md:p-0 
             flex-col md:flex-row rounded-3xl md:rounded-none shadow-md md:shadow-none`}
           >
-            <ul className="flex flex-col md:flex-row gap-3 md:gap-8 items-center">
+            <ul className="flex flex-col md:flex-row gap-2 md:gap-4 items-center">
               
               <motion.li {...navMotion}>
                 <Link
                   to="/"
                   className="py-2 px-5 rounded-3xl text-gray-800 hover:bg-custom-yellow font-light text-base hover:text-white flex items-center gap-2"
                 >
-                  <Home strokeWidth={1.5} size={20} /> Home
+                  {/* <Home strokeWidth={1.5} size={20} />  */}
+                  Home
                 </Link>
               </motion.li>
 
@@ -60,7 +61,8 @@ function Navbar() {
                   href="#services"
                   className="py-2 px-5 rounded-3xl text-gray-800 hover:bg-custom-yellow font-light text-base hover:text-white flex items-center gap-2"
                 >
-                  <Briefcase strokeWidth={1.5} size={20} /> Our Services
+                  {/* <Briefcase strokeWidth={1.5} size={20} />  */}
+                  Our Services
                 </a>
               </motion.li>
 
@@ -69,7 +71,8 @@ function Navbar() {
                   href="#about"
                   className="py-2 px-5 rounded-3xl text-gray-800 hover:bg-custom-yellow font-light text-base hover:text-white flex items-center gap-2"
                 >
-                  <Users strokeWidth={1.5} size={20} /> About Us
+                  {/* <Users strokeWidth={1.5} size={20} />  */}
+                  About Us
                 </a>
               </motion.li>
 
