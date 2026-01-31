@@ -130,7 +130,7 @@ function Contact() {
                 key={index}
                 className="flex items-center space-x-4">
                 <div className="flex-shrink-0">
-                  <contactInfo.icon strokeWidth={1} size={48} absoluteStrokeWidth={true} />
+                  <contactInfo.icon strokeWidth={1} size={32} absoluteStrokeWidth={true} />
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold mb-1 text-black">{contactInfo.title}</h3>
