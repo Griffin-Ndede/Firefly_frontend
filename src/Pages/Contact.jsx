@@ -62,7 +62,7 @@ function Contact() {
     <>
       <Navbar />
       <section id="contact"
-        className='min-h-screen grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-32 bg-white border-b border-gray-300 px-10 sm:px-6 lg:px-20 py-10'>
+        className='min-h-fit grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-32 bg-white border-b border-gray-300 px-10 sm:px-6 lg:px-20 py-10'>
         <div className='h-fit w-full rounded-3xl bg-white py-10 px-10 sm:px-16 mt-16 md:mt-24 shadow-2xl'>
           <h1 className='text-lg sm:text-xl font-light mb-4'>Get in touch</h1>
           <p className='font-bold text-2xl sm:text-3xl lg:text-4xl mb-4'>Let&apos;s chat, <br /> Reach out to us!</p>
