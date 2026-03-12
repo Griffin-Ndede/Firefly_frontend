@@ -4,7 +4,7 @@ import { Link } from 'react-router';
 import Navbar from '../Components/Navbar'
 import Footer from '../Components/Footer'
 import Contact from '../Pages/Contact'
-import { CircleCheckBig, Grip, ScrollText, SquareStack, Palette, Blend, Ratio, LibraryBig, ArrowRight } from 'lucide-react'
+import { CircleCheckBig, Grip, ScrollText, SquareStack, Palette, Blend, Ratio, LibraryBig, ArrowRight, ArrowBigDownIcon } from 'lucide-react'
 import videoBg from '../Assets/Flowers.mp4'
 import { motion } from "motion/react"
 
@@ -94,6 +94,9 @@ function Home() {
                             </div>
                         </motion.div>
                     </div>
+                </div>
+                <div>
+                    <ArrowBigDownIcon className='w-12 h-12 text-white mx-auto mt-10 animate-bounce' />
                 </div>
             </section>
             <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
