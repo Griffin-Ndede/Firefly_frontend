@@ -4,7 +4,7 @@ import { Link } from 'react-router';
 import Navbar from '../Components/Navbar'
 import Footer from '../Components/Footer'
 import Contact from '../Pages/Contact'
-import { CircleCheckBig, Grip, ScrollText, SquareStack, Palette, Blend, Ratio, LibraryBig, ArrowRight, ArrowBigDownIcon } from 'lucide-react'
+import { CircleCheckBig, Grip, ScrollText, SquareStack, Palette, Blend, Ratio, LibraryBig, ArrowRight, ArrowDown } from 'lucide-react'
 import videoBg from '../Assets/Flowers.mp4'
 import { motion } from "motion/react"
 
@@ -92,12 +92,18 @@ function Home() {
                                     </button>
                                 </a>
                             </div>
+
                         </motion.div>
+                        <div className="absolute bottom-8 transform -translate-x-1/2 z-10 animate-bounce mx-auto">
+                            <div className="w-15 h-15 p-6 border-2 border-white rounded-full flex items-center justify-center mx-auto">
+                                <a href='#gallery' aria-label="Scroll to gallery">
+                                    <ArrowDown strokeWidth={1} size={42} absoluteStrokeWidth className='text-white' />
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div>
-                    <ArrowBigDownIcon className='w-12 h-12 text-white mx-auto mt-10 animate-bounce' />
-                </div>
+
             </section>
             <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
                 <div className="max-w-7xl mx-auto">
@@ -267,7 +273,7 @@ function Home() {
                 <div className='grid grid-cols-1 md:grid-cols-2 w-fit mx-auto gap-10'>
                     <motion.div
                         initial={{ y: 75 }}
-                        whileInView={{y: 0 }}
+                        whileInView={{ y: 0 }}
                         transition={{ duration: 1 }}
                         viewport={{ once: true }} className='text-center mx-auto'>
                         <Tilt>
