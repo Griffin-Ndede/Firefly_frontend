@@ -95,9 +95,9 @@ function Home() {
 
                         </motion.div>
                         <div className="absolute bottom-8 transform -translate-x-1/2 z-10 animate-bounce mx-auto">
-                            <div className="w-15 h-15 p-6 border-2 border-white rounded-full flex items-center justify-center mx-auto">
+                            <div className="w-10 h-10 p-6 border-2 border-white rounded-full flex items-center justify-center mx-auto">
                                 <a href='#gallery' aria-label="Scroll to gallery">
-                                    <ArrowDown strokeWidth={1} size={42} absoluteStrokeWidth className='text-white' />
+                                    <ArrowDown strokeWidth={1.5} size={30} absoluteStrokeWidth className='text-white' />
                                 </a>
                             </div>
                         </div>
