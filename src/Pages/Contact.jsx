@@ -140,7 +140,7 @@ function Contact() {
             ))}
           </div>
           <img
-            src="https://st4.depositphotos.com/1158226/27864/i/450/depositphotos_278643274-stock-photo-stunning-mushrooms-on-moss-and.jpg"
+            src="https://images.stockcake.com/public/f/0/5/f05550ce-71b7-48ee-9c95-ab2e1cb7ed5f_large/fireflies-illuminate-night-stockcake.jpg"
             alt="firefly"
             className='h-40 sm:h-56 md:h-72 w-full object-cover rounded-3xl shadow-2xl mt-6 md:mt-16'
           />
