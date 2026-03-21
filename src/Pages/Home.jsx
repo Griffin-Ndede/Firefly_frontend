@@ -267,7 +267,7 @@ function Home() {
             </section>
 
             <section id='team'
-                className='h-fit py-4 relative'>
+                className='h-full py-4 relative'>
                 <h1 className='text-center text-5xl font-bold text-custom-yellow my-3'>Meet our team</h1>
                 <p className='font-light text-custom-gray mt-4 text-xl text-center my-6'>The professional team behind firefly</p>
                 <div className='grid grid-cols-1 md:grid-cols-2 w-fit mx-auto gap-10'>
